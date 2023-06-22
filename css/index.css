@@ -155,3 +155,87 @@ body{
         left: 30%;
     }
 }*/
+
+.Main{
+    width: 100%;
+    min-height: 80vh;
+    background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-section{
+    width: 80%;
+    min-height: 60vh;
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.Section-img{
+    width: 70%;
+    min-height: 50vh;
+    background-color: yellow;
+}
+
+.Main-h2{
+    width: 40%;
+    min-height: 10vh;
+    background-color: pink;
+
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.Footer{
+    width: 100%;
+    min-height: 10vh;
+    background-color: gray;
+    padding: 0 1rem 0 1rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Footer-wrap{
+    width: 50%;
+    min-height: 6vh;
+    background-color: lightblue;
+    gap: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Footer-contacto{
+    width: 30%;
+    min-height: 6vh;
+    background-color: yellow;
+}
+
+.Footer-ul{
+    width: 20%;
+    min-height: 6vh;
+    background-color: yellow;
+    gap: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-li{
+    width: 2rem;
+    height: 2rem;
+    background-color: pink;
+}
