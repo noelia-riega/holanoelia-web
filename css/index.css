@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li{list-style: none;}
+
+h1, h2, h3, h4, h5, h6, strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a{
+    display: inline;
+}
+
+a:hover{
+
+    
+}
+
+a:active{
+
+}
+
+
+img , video , iframe{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-fit: fill;
+}
+
+svg{
+    display: block;
+    fill: currentColor;
+}
+
+form , input , textarea , label , button , fieldset , legend  , select {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color:inherit;
+    background-color: transparent;
+}
+
+:root{
+    font-size: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+	background-size:cover;
+}
+
+.Header{
+    width: 100%;
+    min-height: 10vh;
+    background-color: gray;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-wrap{
+    width: 85%;
+    background-color: lightblue;
+    margin: auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.Header-h1{
+    width: 20%;
+    background-color: yellow;
+
+}
+
+.Header-logo{}
+
+.Header-ul{
+    width: 40%;
+    background-color: yellow;
+    gap: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-li{
+    width: calc(100% / 3);
+    background-color: pink;
+}
+
+.Header-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: none;
+}
+
+.Header-cat{
+    width: 20%;
+    background-color: yellow;
+}
+
+.Header-a{}
+
+@media(max-width:1000px){
+    .Header-btn{
+        display: block;
+    }
+
+    .Header-ul{
+        display: none;
+        /*display: flex;
+        flex-flow: column;
+        position: absolute;
+        top: 100%;
+        left: 30%;*/
+
+    }
+}
+
+/*@media(max-width:600px){
+    .Header-cat{
+        display: none;
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        top: 100%;
+        left: 30%;
+    }
+}*/
