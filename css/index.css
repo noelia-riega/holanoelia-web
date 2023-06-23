@@ -245,23 +245,89 @@ body{
     min-height: 60vh;
     background-color: gray;
 }
+
 .Work-nav{
     width: 80%;
     min-height: 10vh;
     background-color: lightblue;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .Work-h2{
     width: 20%;
     min-height: 8vh;
     background-color: yellow;
 }
+
 .Work-ul{
     width: 60%;
     min-height: 8vh;
     background-color: yellow;
+    gap: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .Work-li{
     width: calc(100% / 3);
     min-height: 6vh;
     background-color: pink;
 }
+
+.Work-webs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr );
+    grid-auto-rows: 50vh;
+
+    gap: 1rem;
+}
+.Work-article.isActive{
+    grid-column: span 2;
+    grid-row: span 2;
+
+    background-color: yellow;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Work-a{
+        width: 80%;
+    min-height: 50vh;
+    background-color: pink;
+    position: relative;
+}
+.Work-img.isActive{
+    width: 80%;
+    min-height: 50vh;
+    background-color: pink;
+}
+
+.Work-h3.isActive{
+    width: 50%;
+    min-height: 10vh;
+    background-color: burlywood;
+
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.Work-info.isActive{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: yellow;
+}
+.Info-h4.isActive{}
+.Info-ul.isActive{}
+.Info-li.isActive{}
