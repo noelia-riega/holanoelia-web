@@ -240,3 +240,28 @@ body{
     background-color: pink;
 }
 
+.Work-main{
+    width: 100%;
+    min-height: 60vh;
+    background-color: gray;
+}
+.Work-nav{
+    width: 80%;
+    min-height: 10vh;
+    background-color: lightblue;
+}
+.Work-h2{
+    width: 20%;
+    min-height: 8vh;
+    background-color: yellow;
+}
+.Work-ul{
+    width: 60%;
+    min-height: 8vh;
+    background-color: yellow;
+}
+.Work-li{
+    width: calc(100% / 3);
+    min-height: 6vh;
+    background-color: pink;
+}
