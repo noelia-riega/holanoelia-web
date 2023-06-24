@@ -244,6 +244,9 @@ body{
     .Footer{
         justify-content: center;
     }
+    .Footer-wrap{
+        justify-content: center;
+    }
 }
 
 .Work-main{
