@@ -240,6 +240,12 @@ body{
     background-color: pink;
 }
 
+@media(max-width:1000px){
+    .Footer{
+        justify-content: center;
+    }
+}
+
 .Work-main{
     width: 100%;
     min-height: 60vh;
