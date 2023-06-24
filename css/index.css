@@ -285,7 +285,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat( 4 , 1fr );
-    grid-auto-rows: 50vh;
+    grid-auto-rows: 30vh;
 
     gap: 1rem;
 }
@@ -327,7 +327,35 @@ body{
     grid-column: span 2;
     grid-row: span 2;
     background-color: yellow;
+    gap: 2rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
-.Info-h4.isActive{}
-.Info-ul.isActive{}
-.Info-li.isActive{}
+.Info-h4.isActive{
+    width: 80%;
+    min-height: 10vh;
+    background-color: pink;
+}
+.Info-ul.isActive{
+    width: 80%;
+    min-height: 40vh;
+    background-color: pink;
+    gap: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Info-li.isActive{
+    width: calc(100% / 2);
+    min-height: 40vh;
+    background-color: burlywood;
+}
+
+@media(max-width:1000px){
+
+}
