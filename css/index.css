@@ -471,11 +471,85 @@ body{
     }
 }
 
-.Main-me{}
-.Section-me{}
-.H2-me{}
-.H3-me{}
-.Wrapper-me{}
-.Article-me{}
-.Img-me{}
-.P-me{}
+.Main-me{
+    width: 100%;
+    min-height: 100vh;
+    background-color: gray;
+
+
+    
+}
+
+.Section-me{
+    width: 100%;
+    min-height: 10vh;
+    background-color: lightblue;
+    gap: 2rem;
+    padding: 2rem;
+    
+
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.H2-me{
+    width: 20%;
+    min-height: 10vh;
+    background-color: yellow;
+}
+
+.H3-me{
+    width: 40%;
+    min-height: 10vh;
+    background-color: lightsalmon;
+}
+
+.Wrapper-me{
+    display: none;
+    /*width: 100%;
+    min-height: 50vh;
+    background-color: yellow;
+    gap: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;*/
+}
+
+.Wrapper-me.isActive{
+    width: 100%;
+    min-height: 50vh;
+    background-color: yellow;
+    gap: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Article-me{
+    width: calc(100% / 3);
+    min-height: 40vh;
+    background-color: pink;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Img-me{
+    width: 100%;
+    min-height: 30vh;
+    background-color: lightseagreen;
+}
+.P-me{
+    width: 100%;
+    min-height: 10vh;
+    background-color: bisque;
+}
