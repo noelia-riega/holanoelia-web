@@ -391,7 +391,7 @@ body{
 
 .About-wrap{
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: lightblue;
 
     display: flex;
@@ -455,4 +455,18 @@ body{
     width: 60%;
     min-height: 60vh;
     background-color: pink;
+}
+
+@media(max-width:1000px){
+    .About-wrap{
+        display: block;
+    }
+    .About-section{
+        position: static;
+        width: 100%;
+    }
+
+    .About-artwrap{
+        width: 100%;
+    }
 }
