@@ -428,21 +428,29 @@ body{
     background-color: pink;
 }
 
-.Article-wrap{
+.About-artwrap{
     width: 50%;
     min-height: 100vh;
     background-color: burlywood;
 }
+
 .About-article{
-    width: 50%;
+    width: 100%;
     min-height: 100vh;
     background-color: burlywood;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .About-h3{
     width: 60%;
     min-height: 10vh;
     background-color: pink;
 }
+
 .About-p{
     width: 60%;
     min-height: 40vh;
