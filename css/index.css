@@ -499,10 +499,44 @@ body{
     background-color: yellow;
 }
 
-.H3-me{
+.Nav-me{
     width: 40%;
     min-height: 10vh;
     background-color: lightsalmon;
+}
+
+.Ul-me{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Li-me{
+    width: calc(100% / 3);
+    min-height: 10vh;
+    background-color: pink;
+}
+.A-me{}
+
+.Button-me{
+    position: relative;
+}
+.Me-btn.left{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 50%;
+    left: .5%;
+
+}
+
+.Me-btn.right{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 50%;
+    right: .5%;
 }
 
 .Wrapper-me{
