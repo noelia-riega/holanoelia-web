@@ -60,10 +60,8 @@ form , input , textarea , label , button , fieldset , legend  , select {
     --font-sec: 'Merriweather', serif;
     --main-color: #F9F54B;
     --sec-color: #5F6F94;
-    --text-color: #252525;
-    --hover-text-color: ;
-    --active-text-color: ;
-    
+    --text-color: #252525;   
+    --hover-color: #ff0080;
 }
 
 html{
@@ -121,8 +119,21 @@ body{
 .Header-li{
     width: calc(100% / 3);
     background-color: pink;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+
 }
 
+.Header-li:hover{
+    color: var(--hover-color)
+
+}
+.Header-li:active{
+    color: var(--main-color);
+}
 .Header-btn{
     width: 2.5rem;
     height: 2.5rem;
@@ -135,7 +146,8 @@ body{
     background-color: yellow;
 }
 
-.Header-a{}
+.Header-a{
+}
 
 @media(max-width:1000px){
     .Header-btn{
@@ -228,13 +240,13 @@ body{
 .Footer-contacto{
     width: 30%;
     min-height: 6vh;
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
 .Footer-ul{
     width: 20%;
     min-height: 6vh;
-    background-color: yellow;
+    /*background-color: yellow;*/
     gap: 1rem;
 
     display: flex;
@@ -245,9 +257,12 @@ body{
 .Footer-li{
     width: 2rem;
     height: 2rem;
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
+.Footer-svg{
+    color: var(--main-color);
+}
 @media(max-width:1000px){
     .Footer{
         justify-content: center;
