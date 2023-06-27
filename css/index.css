@@ -75,7 +75,7 @@ body{
 .Header{
     width: 100%;
     min-height: 10vh;
-    background-color: gray;
+    /*background-color: gray;*/
 
     display: flex;
     flex-flow: row nowrap;
@@ -85,7 +85,7 @@ body{
 
 .Header-wrap{
     width: 85%;
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     margin: auto;
     padding: 1rem;
 
@@ -98,16 +98,37 @@ body{
 }
 
 .Header-h1{
-    width: 20%;
-    background-color: yellow;
-
+    /*background-color: yellow;*/
+    width: 5rem;
+    height: 5rem;
+    position: relative;
 }
 
-.Header-logo{}
+.Header-logo{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    
+}
+
+.Logo-puntos{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0; 
+    opacity: 0;  
+}
+
+.Logo-puntos:hover{
+    opacity: 1;
+}
+
 
 .Header-ul{
     width: 40%;
-    background-color: yellow;
+    /*background-color: yellow;*/
     gap: 1rem;
 
     display: flex;
@@ -118,7 +139,7 @@ body{
 
 .Header-li{
     width: calc(100% / 3);
-    background-color: pink;
+    /*background-color: pink;*/
     font-family: var(--font-main);
     text-transform: uppercase;
     color: var(--text-color);
@@ -142,8 +163,24 @@ body{
 }
 
 .Header-cat{
-    width: 20%;
-    background-color: yellow;
+    width: 7rem;
+    position: relative;
+}
+.Header-bcat{
+    opacity: 1;
+    position: absolute;
+}
+.Header-bcat:hover{
+    opacity: 0;
+}
+
+.Header-ycat{
+    opacity: 0;
+    position: absolute;
+}
+
+.Header-ycat:hover{
+    opacity: 1;
 }
 
 .Header-a{
