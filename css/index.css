@@ -74,10 +74,6 @@ body{
 
 .Header{
     width: 100%;
-    min-height: 10vh;
-    /*background-color: gray;*/
-
-
 
     display: flex;
     flex-flow: row nowrap;
@@ -89,7 +85,7 @@ body{
     width: 85%;
     /*background-color: lightblue;*/
     margin: auto;
-    padding: 1rem;
+    padding: .5rem;
 
     display: flex;
     flex-flow: row nowrap;
@@ -101,14 +97,14 @@ body{
 
 .Header-h1{
     /*background-color: yellow;*/
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     position: relative;
 }
 
 .Header-logo{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
     top: 0;
     opacity: 1;
@@ -116,8 +112,8 @@ body{
 }
 
 .Header-logohover{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
     top: 0%; 
     opacity: 0;
@@ -181,8 +177,8 @@ body{
 }
 
 .Header-cat{
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 5rem;
     position: relative;
 
     display: flex;
@@ -253,8 +249,7 @@ body{
 .Main{
     width: 100%;
     min-height: 80vh;
-    
-
+    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
