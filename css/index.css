@@ -74,7 +74,7 @@ body{
 
 .Header{
     width: 100%;
-
+    padding: 2rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -142,10 +142,11 @@ body{
     /*background-color: pink;*/
     font-family: var(--font-main);
     text-transform: uppercase;
-    color: var(--text-color);
+    color: var(--sec-color);
     font-weight: 900;
     text-align: center;
     font-size: 20px;
+    letter-spacing: 5px;
     position: relative;
 }
 
@@ -177,8 +178,8 @@ body{
 }
 
 .Header-cat{
-    width: 7rem;
-    height: 5rem;
+    width: 8vw;
+    height: 8vh;
     position: relative;
 
     display: flex;
@@ -188,8 +189,8 @@ body{
 }
 
 .Cat-normal{
-    width: 8rem;
-    height: 8rem;
+    width: 8vw;
+    height: 8vh;
     opacity: 1;
     position: absolute;
     top: 0%;    
@@ -202,8 +203,8 @@ body{
 }
 
 .Cat-hover{
-    width: 8rem;
-    height: 8rem;
+    width: 8vw;
+    height: 8vh;
     opacity: 0;
     position: absolute;
     top: 0;    
@@ -248,11 +249,27 @@ body{
 
 .Main{
     width: 100%;
-    min-height: 80vh;
-    background-color: var(--main-color);
+    background: var(--main-color);
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5vh;
+    position: relative;
+
+}
+
+.Main::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 36px 36px 0 36px;
+  border-color: var(--main-color) transparent transparent transparent;
+  left: 81%;
+  transform: translateX(-50%) translateY(100%);
 }
 
 .Main-section{
@@ -321,7 +338,7 @@ body{
 }
 
 .Footer-contacto{
-    width: 30%;
+    width: 25%;
     min-height: 6vh;
     background-color: var(--main-color);
     border-radius: 10px;
@@ -336,11 +353,12 @@ body{
 .Contacto-a{
     width: 100%;
     font-family: var(--font-main);
-    color: var(--text-color);
-    text-align: center;
-    font-weight: 600;
-    font-size: 1rem;
     text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 900;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 3px;
     
 }
 
