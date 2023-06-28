@@ -58,7 +58,7 @@ form , input , textarea , label , button , fieldset , legend  , select {
     font-size: 100%;
     --font-main:'Raleway', sans-serif;
     --font-sec: 'Merriweather', serif;
-    --main-color: #F9F54B;
+    --main-color: #ffe569;
     --sec-color: #5F6F94;
     --text-color: #252525;   
     --hover-color: #ff0080;
@@ -118,16 +118,18 @@ body{
     height: 5rem;
     position: absolute;
     top: 0%; 
-    opacity: 0;  
+    opacity: 0;
+    transition: all .5s ease;  
 }
 
 .Header-logohover:hover{
     opacity: 1;
+    transition: all .5s ease;
 }
 
 
 .Header-ul{
-    width: 40%;
+    width: 30%;
     /*background-color: yellow;*/
     gap: 1rem;
 
@@ -138,7 +140,7 @@ body{
 }
 
 .Header-li{
-    width: calc(100% / 3);
+    width: auto;
     /*background-color: pink;*/
     font-family: var(--font-main);
     text-transform: uppercase;
@@ -146,20 +148,24 @@ body{
     font-weight: 900;
     text-align: center;
     font-size: 20px;
+    position: relative;
 }
 
 .Header-li::after{
     content: '';
-    width: 3rem;
-    height: 3px;
-    background-color: var(--text-color);
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: center;
-    align-items: center;
+    width: 0%;
+    height: 4vh;
+    background-color: var(--main-color);
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: all .5s ease;
+
 }
-.Header-li:hover{
-    color: var(--hover-color)
+.Header-li:hover::after{
+    width: 100%;
 
 }
 .Header-li:active{
