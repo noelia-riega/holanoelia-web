@@ -329,10 +329,32 @@ body{
     align-items: center;
 }
 
-.Form-noe{
+.Section-form{
     grid-column: span 2;
     grid-row: span 1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.Header-form{
+    width: 20vw;
+    min-height: 6vh;
+    background-color: var(--sec-color);
+
+}
+.Form-h2{
+    width: 100%;
+    min-height: 5vh;
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
 .Footer{
     width: 100%;
     min-height: 10vh;
