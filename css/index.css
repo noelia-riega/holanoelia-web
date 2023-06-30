@@ -332,16 +332,24 @@ body{
 .Section-form{
     grid-column: span 2;
     grid-row: span 1;
-
+    margin: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
+.Section-wrap{
+    width: 100%;
+    min-height: 20vh;
+    border-radius: 10px;
+    background: #f7f3f3;
+
+}
 .Header-form{
-    width: 20vw;
+    width: 100%;
     min-height: 6vh;
+    border-radius: 10px 10px 0 0;
     background-color: var(--sec-color);
 
 }
