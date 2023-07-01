@@ -45,7 +45,7 @@ svg{
     fill: currentColor;
 }
 
-form , input , textarea , label , button , fieldset , legend  , select {
+form , input , textarea , label , button , fieldset , legend  , select{
     display: block;
     font-family: inherit;
     font-size: inherit;
@@ -267,7 +267,7 @@ body{
   border-style: solid;
   border-width: 36px 36px 0 36px;
   border-color: var(--main-color) transparent transparent transparent;
-  left: 81%;
+  left: 82%;
   transform: translateX(-50%) translateY(100%);
 }
 
@@ -285,26 +285,31 @@ body{
     grid-column: span 1;
     grid-row: span 1;
 
+    margin: 1rem;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 
-.Noe-h2{}
+.Noe-h2{
+    width: 100%;
+}
 
 .Main-text{
     grid-column: span 1;
     grid-row: span 1;
+    margin: 1rem;
     display: flex;
-    flex-flow: nowrap;
+    flex-flow: row;
     justify-content: end;
     align-items: center;
-
-    position: relative;
 }
+
 .Noe-h3{
-   width: 50%;
+   width: 80%;
+   margin: 1rem;
    font-family: var(--font-main);
    color: var(--sec-color);
    font-size: 5rem;
@@ -317,12 +322,13 @@ body{
 .Noe-img{
     grid-column: span 1;
     grid-row: span 1;
+    margin: 1rem;
 }
 
 .Hola-h3{
     grid-column: span 1;
     grid-row: span 1;
-
+    margin: 1rem;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -332,7 +338,8 @@ body{
 .Section-form{
     grid-column: span 2;
     grid-row: span 1;
-    margin: auto;
+    margin: 1rem;
+
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -340,27 +347,87 @@ body{
 }
 
 .Section-wrap{
-    width: 100%;
+    width: 40%;
     min-height: 20vh;
     border-radius: 10px;
     background: #f7f3f3;
 
 }
+
 .Header-form{
     width: 100%;
     min-height: 6vh;
     border-radius: 10px 10px 0 0;
     background-color: var(--sec-color);
-
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
-.Form-h2{
+
+.Form-contact{
     width: 100%;
-    min-height: 5vh;
+    background-color: white;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;    
+}
+
+.Form-h2{
+    width: auto;
     font-family: var(--font-main);
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-align: center;  
+}
+
+.Form-noe{
+    width: 85%;
+    margin: auto;
+    padding: 1rem;
+
+    text-align: start;
+    font-family: var(--font-sec);
+    font-size: 15px;
+}
+
+.Form-submit{
+    width: 100%;
+    min-height: 4vh;
+    border-radius: 0 0 10px 10px;
+    background: var(--sec-color);
+    font-family: var(--font-main);
+    color: white;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+@media(max-width:1000px){
+    .Main-text{
+        justify-content: center;
+    }
+    .Noe-h3{
+        width: 80%;
+        font-family: var(--font-main);
+        color: var(--sec-color);
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: end;
+        text-decoration: overline;
+        text-decoration-color: var(--hover-color);
+    }
+    .Section-wrap{
+        width: 50%;
+    }
+
+    .Main::before{
+        left: 50%;
+    }
 }
 
 .Footer{
@@ -416,6 +483,9 @@ body{
         justify-content: center;
     }
     .Footer-wrap{
+        justify-content: center;
+    }
+    .Footer-ul{
         justify-content: center;
     }
 }
