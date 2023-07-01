@@ -173,7 +173,7 @@ body{
 .Header-btn{
     width: 2.5rem;
     height: 2.5rem;
-
+    fill: var(--sec-color);
     display: none;
 }
 
@@ -273,12 +273,11 @@ body{
 
 .Main-section{
     width: 80%;
-    min-height: 60vh;
     /*background-color: lightblue;*/
 
     display: grid;
     grid-template-columns: repeat( 2 , 1fr );
-    grid-auto-rows: 60vh;
+    grid-auto-rows: 80vh;
 }
 
 .Main-h2{
@@ -319,10 +318,17 @@ body{
    text-decoration-color: var(--hover-color);
 }
 
-.Noe-img{
+.Main-noeimg{
     grid-column: span 1;
     grid-row: span 1;
-    margin: 1rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.Noe-img{
+    object-fit: contain;
 }
 
 .Hola-h3{
@@ -338,10 +344,10 @@ body{
 .Section-form{
     grid-column: span 2;
     grid-row: span 1;
-    margin: 1rem;
+    margin: 1.5rem;
 
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
 }
@@ -351,7 +357,6 @@ body{
     min-height: 20vh;
     border-radius: 10px;
     background: #f7f3f3;
-
 }
 
 .Header-form{
@@ -430,6 +435,19 @@ body{
     }
 }
 
+@media(max-width:600px){
+    .Main-section{
+        display: block;
+        gap: 1rem;
+    }
+    .Noe-h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    
+}
+
 .Footer{
     width: 100%;
     min-height: 10vh;
@@ -490,6 +508,12 @@ body{
     }
 }
 
+@media(max-width:600px){
+
+    .Footer-ul{
+        width: 80%;
+    }
+}
 .Work-main{
     width: 100%;
     min-height: 60vh;
