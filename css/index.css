@@ -79,6 +79,7 @@ body{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .Header-wrap{
@@ -451,8 +452,6 @@ body{
 
     }
 
-    
-
 }
 
 .Footer{
@@ -521,6 +520,109 @@ body{
         width: 80%;
     }
 }
+
+.About-main{
+    width: 100%;
+}
+
+.About-wrap{
+    width: 100%;
+    /*background-color: lightblue;*/
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.About-section{
+    width: 50%;
+    height: 100vh;
+
+    background-color: var(--main-color);
+    position: fixed;
+    top: 19%;
+    left: 0%;
+    padding-top: 4rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.About-name{
+    width: 60%;
+    font-family: var(--font-main);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 7px;
+    word-spacing: 2.2rem;
+    text-align: center;
+}
+
+.About-img{
+    width: 60%;
+}
+
+.About-artwrap{
+    width: 50%;
+    padding-top: 5rem;
+}
+
+.About-article{
+    width: 100%;
+    min-height: 100vh;
+    gap: 4rem ;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.About-h3{
+    width: 60%;
+    font-family: var(--font-sec);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 7px;
+    word-spacing: 2.2rem;
+    text-align: end;
+}
+
+.About-p{
+    width: 60%;
+    min-height: 60vh;
+    font-family: var(--font-sec);
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: end;
+    line-height: 2rem;
+
+}
+
+
+@media(max-width:1000px){
+    .About-wrap{
+        display: block;
+    }
+    .About-section{
+        position: static;
+        width: 100%;
+    }
+
+    .About-artwrap{
+        width: 100%;
+    }
+}
+
 .Work-main{
     width: 100%;
     min-height: 60vh;
@@ -653,93 +755,6 @@ body{
 @media(max-width:600px){
     .Info-ul.isActive{
         flex-flow: wrap;
-    }
-}
-
-.About-main{
-    width: 100%;
-    background-color: gray;
-}
-
-.About-wrap{
-    width: 100%;
-    min-height: 80vh;
-    background-color: lightblue;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.About-section{
-    width: 50%;
-    min-height: 100vh;
-    background-color: yellow;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.About-name{
-    width: 60%;
-    min-height: 10vh;
-    background-color: pink;
-}
-
-.About-img{
-    width: 60%;
-    min-height: 60vh;
-    background-color: pink;
-}
-
-.About-artwrap{
-    width: 50%;
-    min-height: 100vh;
-    background-color: burlywood;
-}
-
-.About-article{
-    width: 100%;
-    min-height: 100vh;
-    background-color: burlywood;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.About-h3{
-    width: 60%;
-    min-height: 10vh;
-    background-color: pink;
-}
-
-.About-p{
-    width: 60%;
-    min-height: 60vh;
-    background-color: pink;
-}
-
-@media(max-width:1000px){
-    .About-wrap{
-        display: block;
-    }
-    .About-section{
-        position: static;
-        width: 100%;
-    }
-
-    .About-artwrap{
-        width: 100%;
     }
 }
 
