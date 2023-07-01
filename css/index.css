@@ -383,7 +383,7 @@ body{
 .Form-h2{
     width: auto;
     font-family: var(--font-main);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
     text-transform: uppercase;
     color: white;
@@ -413,6 +413,9 @@ body{
 }
 
 @media(max-width:1000px){
+    .Main-section{
+        grid-auto-rows: 60vh;
+    }
     .Main-text{
         justify-content: center;
     }
@@ -444,6 +447,12 @@ body{
         font-size: 1.5rem;
         text-align: center;
     }
+    .Form-noe{
+
+    }
+
+    
+
 }
 
 .Footer{
