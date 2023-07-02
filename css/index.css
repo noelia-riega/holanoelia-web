@@ -618,13 +618,12 @@ body{
 .Work-main{
     width: 100%;
     min-height: 60vh;
-    background-color: gray;
+    margin-top: 3rem;
 }
 
 .Work-nav{
     width: 80%;
     min-height: 10vh;
-    background-color: lightblue;
     margin: 0 0 0 5%;
 
     display: flex;
@@ -635,7 +634,7 @@ body{
 
 .Work-h2{
     width: 20%;
-    background-color: yellow;
+    /*background-color: yellow;*/
     font-family: var(--font-main);
     font-size: 2rem;
     text-transform: uppercase;
@@ -649,7 +648,6 @@ body{
 .Work-ul{
     width: 40%;
     min-height: 8vh;
-    background-color: yellow;
     gap: 1rem;
     display: flex;
     flex-flow: row nowrap;
@@ -659,7 +657,7 @@ body{
 
 .Work-li{
     width: auto;
-    background-color: pink;
+    /*background-color: pink;*/
     font-family: var(--font-main);
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -669,6 +667,7 @@ body{
     word-spacing: 2.2rem;
     text-align: center;
 }
+
 
 .Work-li:hover{
     color: var(--hover-color);
@@ -684,7 +683,7 @@ body{
 
     gap: 1rem;
 }
-.Work-article.isActive{
+.Work-article{
     grid-column: span 2;
     grid-row: span 2;
 
@@ -697,28 +696,38 @@ body{
 }
 
 .Work-a{
-        width: 80%;
+    width: 80%;
     min-height: 50vh;
     background-color: pink;
     position: relative;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-.Work-img.isActive{
+.Work-img{
     width: 80%;
     min-height: 50vh;
     background-color: pink;
 }
 
-.Work-h3.isActive{
-    width: 50%;
-    min-height: 10vh;
+.Work-h3{
+    width: auto;
     background-color: burlywood;
-
+    margin: auto;
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 40%;
+
+    font-family: var(--font-main);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
 }
 
-.Work-info.isActive{
+.Work-info{
     grid-column: span 2;
     grid-row: span 2;
     background-color: yellow;
@@ -729,12 +738,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-.Info-h4.isActive{
+.Info-h4{
     width: 80%;
-    min-height: 10vh;
     background-color: pink;
+    font-family: var(--font-sec);
+    color: white;
+    text-align: end;
+    font-size: 3rem;
 }
-.Info-ul.isActive{
+.Info-ul{
     width: 80%;
     min-height: 40vh;
     background-color: pink;
@@ -745,10 +757,20 @@ body{
     justify-content: center;
     align-items: center;
 }
-.Info-li.isActive{
+.Info-li{
     width: calc(100% / 2);
     min-height: 40vh;
     background-color: burlywood;
+}
+
+.Info-p{
+    font-family: var(--font-sec);
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify;
+    line-height: 2rem;
 }
 
 @media(max-width:1000px){
@@ -765,7 +787,7 @@ body{
 }
 
 @media(max-width:600px){
-    .Info-ul.isActive{
+    .Info-ul{
         flex-flow: wrap;
     }
 }
