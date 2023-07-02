@@ -74,19 +74,17 @@ body{
 
 .Header{
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .Header-wrap{
     width: 85%;
     /*background-color: lightblue;*/
     margin: auto;
-    padding: .5rem;
 
     display: flex;
     flex-flow: row nowrap;
@@ -104,8 +102,7 @@ body{
 }
 
 .Header-logo{
-    width: 4rem;
-    height: 4rem;
+    width: 100%;
     position: absolute;
     top: 0;
     opacity: 1;
@@ -113,8 +110,7 @@ body{
 }
 
 .Header-logohover{
-    width: 4rem;
-    height: 4rem;
+    width: 100%;
     position: absolute;
     top: 0%; 
     opacity: 0;
@@ -179,8 +175,7 @@ body{
 }
 
 .Header-cat{
-    width: 8vw;
-    height: 8vh;
+    width: 6rem;
     position: relative;
 
     display: flex;
@@ -190,8 +185,7 @@ body{
 }
 
 .Cat-normal{
-    width: 8vw;
-    height: 8vh;
+    width: 6rem;
     opacity: 1;
     position: absolute;
     top: 0%;    
@@ -204,8 +198,7 @@ body{
 }
 
 .Cat-hover{
-    width: 8vw;
-    height: 8vh;
+    width: 6rem;
     opacity: 0;
     position: absolute;
     top: 0;    
@@ -222,6 +215,9 @@ body{
 }
 
 @media(max-width:1000px){
+    .Header-wrap{
+        width: 100%;
+    }
     .Header-btn{
         display: block;
     }
@@ -237,16 +233,11 @@ body{
     }
 }
 
-/*@media(max-width:600px){
-    .Header-cat{
-        display: none;
-        display: flex;
-        flex-flow: column;
-        position: absolute;
-        top: 100%;
-        left: 30%;
+@media(max-width:600px){
+    .Header-wrap{
+        width: 100%;
     }
-}*/
+}
 
 .Main{
     width: 100%;
@@ -541,7 +532,7 @@ body{
 
     background-color: var(--main-color);
     position: fixed;
-    top: 19%;
+    top: 14%;
     left: 0%;
     padding-top: 4rem;
 
@@ -616,6 +607,7 @@ body{
     .About-section{
         position: static;
         width: 100%;
+        min-height: 120vh;
     }
 
     .About-artwrap{
@@ -643,12 +635,19 @@ body{
 
 .Work-h2{
     width: 20%;
-    min-height: 8vh;
     background-color: yellow;
+    font-family: var(--font-main);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 7px;
+    word-spacing: 2.2rem;
+    text-align: start;
 }
 
 .Work-ul{
-    width: 60%;
+    width: 40%;
     min-height: 8vh;
     background-color: yellow;
     gap: 1rem;
@@ -659,9 +658,22 @@ body{
 }
 
 .Work-li{
-    width: calc(100% / 3);
-    min-height: 6vh;
+    width: auto;
     background-color: pink;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 7px;
+    word-spacing: 2.2rem;
+    text-align: center;
+}
+
+.Work-li:hover{
+    color: var(--hover-color);
+    transition: all .5s ease;
+
 }
 
 .Work-webs{
