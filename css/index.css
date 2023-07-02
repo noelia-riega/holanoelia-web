@@ -707,19 +707,19 @@ body{
     align-items: center;
 }
 .Work-img{
-    width: 80%;
+    width: 100%;
     min-height: 50vh;
     background-color: pink;
+    object-fit: cover;
 }
 
 .Work-h3{
     width: auto;
-    background-color: burlywood;
     margin: auto;
     position: absolute;
     top: 40%;
     left: 40%;
-
+    
     font-family: var(--font-main);
     font-size: 3rem;
     text-transform: uppercase;
