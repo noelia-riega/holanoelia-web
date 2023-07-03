@@ -843,7 +843,6 @@ body{
     gap: 2rem;
     padding: 2rem;
     
-
     display: flex;
     flex-flow: row wrap ;
     justify-content: flex-start;
@@ -851,41 +850,72 @@ body{
 
 }
 
-.H2-me{
+.Me-h2{
     width: 20%;
-    min-height: 10vh;
-    background-color: yellow;
+    margin-left: 2%;
+    font-family: var(--font-main);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 7px;
+    word-spacing: 2.2rem;
+    text-align: start;
 }
 
-.Nav-me{
-    width: 40%;
-    min-height: 10vh;
-    background-color: lightsalmon;
+.Me-nav{
+    width: 60%;
 }
 
-.Ul-me{
+.Me-ul{
     width: 100%;
     display: flex;
+    gap: 1rem;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
-.Li-me{
-    width: calc(100% / 3);
-    min-height: 10vh;
-    background-color: pink;
-}
-.A-me{}
 
-.Button-me{
+.Me-li{
+    width: auto;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 5px;
+    word-spacing: .5rem;
+    text-align: start;
+    position: relative;
+}
+
+.Me-li:hover{
+    color: var(--hover-color);
+    transition: all .5s ease;
+}
+.Me-li::after{
+    content: '/';
+    position: absolute;
+    top: 0%;
+    left: 100%;
+}
+.Me-li:last-child{
+    content:'';
+    
+}
+
+.Me-a{}
+
+.Me-button{
     position: relative;
 }
 .Me-btn.left{
     width: 3rem;
     height: 3rem;
     position: fixed;
-    bottom: 50%;
+    bottom: 45%;
     left: .5%;
+    fill: var(--sec-color);
 
 }
 
@@ -893,11 +923,12 @@ body{
     width: 3rem;
     height: 3rem;
     position: fixed;
-    bottom: 50%;
+    bottom: 45%;
     right: .5%;
+    fill: var(--sec-color);
 }
 
-.Wrapper-me{
+.Me-wrap{
     display: none;
     /*width: 100%;
     min-height: 50vh;
@@ -911,10 +942,10 @@ body{
     align-items: center;*/
 }
 
-.Wrapper-me.isActive{
+.Me-wrap.isActive{
     width: 100%;
     min-height: 50vh;
-    background-color: yellow;
+    ;
     gap: 2rem;
     padding: 2rem;
 
@@ -923,7 +954,7 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.Article-me{
+.Me-article{
     width: calc(100% / 3);
     min-height: 40vh;
     background-color: pink;
@@ -933,12 +964,17 @@ body{
     justify-content: center;
     align-items: center;
 }
-.Img-me{
+.Me-img{
     width: 100%;
     min-height: 30vh;
     background-color: lightseagreen;
 }
-.P-me{
+
+.Me-h3{
+
+}
+
+.me-p{
     width: 100%;
     min-height: 10vh;
     background-color: bisque;
