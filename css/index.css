@@ -59,6 +59,8 @@ form , input , textarea , label , button , fieldset , legend  , select{
     --font-main:'Raleway', sans-serif;
     --font-sec: 'Merriweather', serif;
     --main-color: #ffe569;
+    --other-color: #fbf2c3;
+    --miau-color: #faeeae;
     --sec-color: #5F6F94;
     --text-color: #252525;   
     --hover-color: #ff0080;
@@ -957,7 +959,6 @@ body{
 .Me-article{
     width: calc(100% / 3);
     min-height: 40vh;
-    background-color: pink;
 
     display: flex;
     flex-flow: row wrap;
@@ -966,7 +967,7 @@ body{
 }
 .Me-img{
     width: 100%;
-    min-height: 30vh;
+    object-fit: cover;
     background-color: lightseagreen;
 }
 
