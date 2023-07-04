@@ -81,6 +81,7 @@ body{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .Header-wrap{
@@ -243,8 +244,7 @@ body{
 
 .Main{
     width: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,229,105,1) 20%);
+    background: var(--other-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +261,7 @@ body{
   height: 0;
   border-style: solid;
   border-width: 36px 36px 0 36px;
-  border-color: var(--main-color) transparent transparent transparent;
+  border-color: var(--other-color) transparent transparent transparent;
   left: 82%;
   transform: translateX(-50%) translateY(100%);
 }
@@ -834,14 +834,14 @@ body{
 .Main-me{
     width: 100%;
     min-height: 100vh;
-    background-color: gray; 
+     
 
 }
 
 .Section-me{
     width: 100%;
     min-height: 10vh;
-    background-color: lightblue;
+    
     gap: 2rem;
     padding: 2rem;
     
@@ -959,26 +959,41 @@ body{
 .Me-article{
     width: calc(100% / 3);
     min-height: 40vh;
-
+    gap: 2rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 .Me-img{
     width: 100%;
     object-fit: cover;
-    background-color: lightseagreen;
+    
 }
 
 .Me-h3{
-
+    width: 80%;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 400;
+    letter-spacing: 5px;
+    word-spacing: .5rem;
+    text-align: center;
 }
 
-.me-p{
-    width: 100%;
-    min-height: 10vh;
-    background-color: bisque;
+.Me-p{
+    width: 80%;
+    font-family: var(--font-sec);
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    text-align: center;
+
 }
 
 @media(max-width:1000px){
