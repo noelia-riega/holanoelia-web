@@ -62,6 +62,7 @@ form , input , textarea , label , button , fieldset , legend  , select{
     --main-color: #f5db5a;
     --text-color: #252525;   
     --hover-color: #ff0080;
+    --white-color: #ffff;
 }
 
 html{
@@ -152,7 +153,7 @@ body{
 }
 
 .Header-li:hover{
-    color: white;
+    color: var(--white-color);
 }
 
 .Header-li::after{
@@ -374,7 +375,7 @@ body{
     width: 40%;
     min-height: 20vh;
     border-radius: 10px;
-    background: #f7f3f3;
+    background: var(--white-color);
 }
 
 .Header-form{
@@ -390,7 +391,7 @@ body{
 
 .Form-contact{
     width: 100%;
-    background-color: white;
+    background-color: var(--white-color);
     gap: 1rem;
     display: flex;
     flex-flow: column;
@@ -404,7 +405,7 @@ body{
     font-size: 1.25rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: white;
+    color: var(--white-color);
     text-align: center;  
 }
 
@@ -424,7 +425,7 @@ body{
     border-radius: 0 0 10px 10px;
     background: var(--main-color);
     font-family: var(--font-main);
-    color: white;
+    color: var(--white-color);
     font-weight: 900;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -556,12 +557,10 @@ body{
 .About-section{
     width: 50%;
     height: 100vh;
-
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,229,105,1) 30%);
+    background-color: var(--bg-color);
 
     position: fixed;
-    top: 14%;
+    top: 0%;
     left: 0%;
     padding-top: 4rem;
 
@@ -574,15 +573,18 @@ body{
 
 .About-name{
     width: 60%;
+    margin-top: 10vh;
     font-family: var(--font-main);
     font-size: 3rem;
     text-transform: uppercase;
-    color: var(--sec-color);
-    font-weight: 400;
+    color: var(--main-color);
+    font-weight: 900;
     letter-spacing: 7px;
     word-spacing: 2.2rem;
     text-align: center;
 }
+
+
 
 .About-img{
     width: 60%;
@@ -608,7 +610,7 @@ body{
     font-family: var(--font-sec);
     font-size: 2rem;
     text-transform: uppercase;
-    color: var(--sec-color);
+    color: var(--text-color);
     font-weight: 400;
     letter-spacing: 7px;
     word-spacing: 2.2rem;
@@ -647,10 +649,8 @@ body{
 .Work-main{
     width: 100%;
     min-height: 60vh;
-    margin-top: 3rem;
-
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,229,105,1) 20%);
+    padding-top: 3rem;
+    background-color: var(--bg-color);
 }
 
 .Work-nav{
