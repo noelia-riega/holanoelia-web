@@ -58,10 +58,8 @@ form , input , textarea , label , button , fieldset , legend  , select{
     font-size: 100%;
     --font-main:'Raleway', sans-serif;
     --font-sec: 'Merriweather', serif;
-    --main-color: #ffe569;
-    --other-color: #fbf2c3;
-    --miau-color: #faeeae;
-    --sec-color: #5F6F94;
+    --bg-color: #fbf2c3; 
+    --main-color: #f5db5a;
     --text-color: #252525;   
     --hover-color: #ff0080;
 }
@@ -76,11 +74,14 @@ body{
 
 .Header{
     width: 100%;
+    background-color: var(--bg-color);
     padding: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -142,7 +143,7 @@ body{
     /*background-color: pink;*/
     font-family: var(--font-main);
     text-transform: uppercase;
-    color: var(--sec-color);
+    color: var(--text-color);
     font-weight: 900;
     text-align: center;
     font-size: 20px;
@@ -150,11 +151,15 @@ body{
     position: relative;
 }
 
+.Header-li:hover{
+    color: white;
+}
+
 .Header-li::after{
     content: '';
     width: 0%;
     height: 4vh;
-    background-color: var(--main-color);
+    background-color: var(--hover-color);
     display: block;
     margin: auto;
     position: absolute;
@@ -244,7 +249,7 @@ body{
 
 .Main{
     width: 100%;
-    background: var(--other-color);
+    background: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +266,7 @@ body{
   height: 0;
   border-style: solid;
   border-width: 36px 36px 0 36px;
-  border-color: var(--other-color) transparent transparent transparent;
+  border-color: var(--bg-color) transparent transparent transparent;
   left: 82%;
   transform: translateX(-50%) translateY(100%);
 }
@@ -299,18 +304,36 @@ body{
     flex-flow: row;
     justify-content: end;
     align-items: center;
+
+    position: relative;
+    z-index: 1;
 }
 
 .Noe-h3{
    width: 80%;
    margin: 1rem;
    font-family: var(--font-main);
-   color: var(--sec-color);
-   font-size: 5rem;
+   color: var(--main-color);
+   font-size: 4rem;
+   font-weight: 900;
+   letter-spacing: 5px;
+   word-spacing: 2px;
    text-transform: uppercase;
    text-align: end;
-   text-decoration: overline;
-   text-decoration-color: var(--hover-color);
+   
+}
+
+.Noe-h3::before{
+    content: '';
+    width:  30%;
+    height: 10vh;
+    background-color: var(--hover-color);
+
+    position: absolute;
+    bottom: 70%;
+    left: 67.5%;
+    z-index: -1;
+
 }
 
 .Main-noeimg{
@@ -358,7 +381,7 @@ body{
     width: 100%;
     min-height: 6vh;
     border-radius: 10px 10px 0 0;
-    background-color: var(--sec-color);
+    background-color: var(--main-color);
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -399,7 +422,7 @@ body{
     width: 100%;
     min-height: 4vh;
     border-radius: 0 0 10px 10px;
-    background: var(--sec-color);
+    background: var(--main-color);
     font-family: var(--font-main);
     color: white;
     font-weight: 900;
@@ -415,14 +438,15 @@ body{
         justify-content: center;
     }
     .Noe-h3{
-        width: 80%;
-        font-family: var(--font-main);
-        color: var(--sec-color);
-        font-size: 3rem;
-        text-transform: uppercase;
+        width: 60%;
+        font-size: 2rem;
         text-align: end;
-        text-decoration: overline;
+        text-decoration-line: overline;
         text-decoration-color: var(--hover-color);
+    }
+
+    .Noe-h3::before{
+        display: none;
     }
     .Section-wrap{
         width: 50%;
