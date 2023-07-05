@@ -57,7 +57,7 @@ form , input , textarea , label , button , fieldset , legend  , select{
 :root{
     font-size: 100%;
     --font-main:'Raleway', sans-serif;
-    --font-sec: 'Merriweather', serif;
+    --font-sec: 'Poppins', sans-serif;
     --bg-color: #fbf2c3; 
     --main-color: #f5db5a;
     --text-color: #252525;   
@@ -387,6 +387,7 @@ body{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: 5px;
 }
 
 .Form-contact{
@@ -426,8 +427,8 @@ body{
     background: var(--main-color);
     font-family: var(--font-main);
     color: var(--white-color);
-    font-weight: 900;
-    letter-spacing: 3px;
+    font-weight: bold;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
@@ -663,17 +664,10 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
-.Work-nav::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--hover-color);
-    position: absolute;
-    bottom: 0;
-}
+
 
 .Work-h2{
     width: 20%;
@@ -681,11 +675,23 @@ body{
     font-family: var(--font-main);
     font-size: 2rem;
     text-transform: uppercase;
-    color: var(--sec-color);
+    color: var(--white-color);
     font-weight: 400;
     letter-spacing: 7px;
     word-spacing: 2.2rem;
     text-align: start;
+    position: relative;
+}
+
+.Work-h2::after{
+    content: '';
+    width: 50%;
+    height: 2vh;
+    background-color: var(--hover-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .Work-ul{
