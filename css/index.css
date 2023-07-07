@@ -301,41 +301,28 @@ body{
     grid-column: span 1;
     grid-row: span 1;
     margin: 1rem;
+    gap: 1rem;
     display: flex;
-    flex-flow: row;
-    justify-content: end;
-    align-items: center;
-
-    position: relative;
-    z-index: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
 }
 
-.Noe-h3{
-   width: 80%;
-   margin: 1rem;
+.Main-decotext{
+   width: auto;
+   height: auto;
+   padding: .5rem;
+   background-color: var(--hover-color);
+   border-radius: 3px;
    font-family: var(--font-main);
    color: var(--main-color);
-   font-size: 4rem;
+   font-size: 3rem;
    font-weight: 900;
    letter-spacing: 5px;
-   word-spacing: 2px;
    text-transform: uppercase;
-   text-align: end;
    
 }
 
-.Noe-h3::before{
-    content: '';
-    width:  30%;
-    height: 10vh;
-    background-color: var(--hover-color);
-
-    position: absolute;
-    bottom: 70%;
-    left: 67.5%;
-    z-index: -1;
-
-}
 
 .Main-noeimg{
     grid-column: span 1;
@@ -435,12 +422,14 @@ body{
 @media(max-width:1000px){
     .Main-section{
         grid-auto-rows: 60vh;
+
     }
     .Main-text{
         justify-content: center;
     }
-    .Noe-h3{
-        width: 60%;
+    .Main-decotext{
+        width: auto;
+        height: auto;
         font-size: 2rem;
         text-align: end;
         text-decoration-line: overline;
@@ -573,8 +562,12 @@ body{
 }
 
 .About-name{
-    width: 60%;
+    width: auto;
+    height: auto;
+    background-color: var(--hover-color);
+    border-radius: 3px;
     margin-top: 10vh;
+    padding: .5rem;
     font-family: var(--font-main);
     font-size: 3rem;
     text-transform: uppercase;
@@ -656,7 +649,6 @@ body{
 
 .Work-nav{
     width: 80%;
-    min-height: 10vh;
     margin: auto;
 
     display: flex;
@@ -670,16 +662,20 @@ body{
 
 
 .Work-h2{
-    width: 20%;
-    /*background-color: yellow;*/
+    width: auto;
+    height: auto;
+    background-color: var(--hover-color);
+    border-radius: 3px;
+    padding: .5rem;
     font-family: var(--font-main);
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    color: var(--white-color);
-    font-weight: 400;
+    color: var(--main-color);
+    font-weight: 900;
     letter-spacing: 7px;
     word-spacing: 2.2rem;
-    text-align: start;
+    text-align: center;
+
     position: relative;
 }
 
@@ -706,15 +702,14 @@ body{
 
 .Work-li{
     width: auto;
-    /*background-color: pink;*/
-    font-family: var(--font-main);
-    font-size: 1.5rem;
+    font-family: var(--font-sec);
+    font-size: 2rem;
     text-transform: uppercase;
-    color: var(--sec-color);
+    color: var(--text-color);
     font-weight: 400;
     letter-spacing: 7px;
     word-spacing: 2.2rem;
-    text-align: center;
+    text-align: end;
 }
 
 
