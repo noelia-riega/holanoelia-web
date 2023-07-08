@@ -158,7 +158,8 @@ body{
 .Header-li::after{
     content: '';
     width: 0%;
-    height: 4vh;
+    height: 3.3vh;
+    border-radius: 2px;
     background-color: var(--acent-color);
     display: block;
     margin: auto;
@@ -173,7 +174,7 @@ body{
 }
 
 .Header-li:active{
-    color: var(--main-color);
+    color: var(--text-color);
 }
 .Header-btn{
     width: 2.5rem;
@@ -682,11 +683,14 @@ body{
 
 .Work-wrap{
     width: 84%;
+    min-height: 30vh;
+    background-color: var(--bg-color);
     margin: auto;
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
 }
 
 .Work-h2{
@@ -703,27 +707,31 @@ body{
     letter-spacing: 7px;
     word-spacing: 2.2rem;
     text-align: center;
-    margin-top: 3rem;
 }
 
 .Work-ul{
-    width: 20%;
+    width: 40%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 3rem;
+    gap: 1rem;
 }
 
 .Work-li{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .Work-webs{
     width: 90%;
+    height: 42vh;
     margin: auto;
-    display: flex
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+
 }
 
 .Work-article{
@@ -744,12 +752,13 @@ body{
 }
 .Work-img{
     width: 100%;
-    min-height: 50vh;
+    max-height: 50vh;
 
     border-radius: 10px;
 
     object-fit: cover;
-    filter: blur(3px);
+    
+    filter: grayscale(80%) blur( 3px );
     transform: scale(0.8);
     transition: all .5s ease;
     opacity: 90%;
@@ -765,39 +774,19 @@ body{
 .Work-h3{
     width: auto;
     margin: auto;
+    
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 35%;
+    left: 35%;
     
     font-family: var(--font-sec);
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: var(--main-color);
     text-align: center;
     letter-spacing: 5px;
+    text-shadow: 1px 1px 2px var(--text-color);
     
-}
-
-.Work-button{
-    position: relative;
-}
-
-.Work-btn.left{
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    bottom: 50%;
-    left: 2%;
-    fill: var(--text-color);
-}    
-
-.Work-btn.right{
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    bottom: 50%;
-    right: 2%;
-    fill: var(--text-color);
 }
 
 
