@@ -640,6 +640,7 @@ body{
 
 .Main-work{
     width: 100%;
+    max-height: 110vh;
     background: var(--bg-color);
     margin-bottom: 5vh;
     position: relative;
@@ -659,7 +660,7 @@ body{
 }
 
 .Work-wrap{
-    width: 84%;
+    width: 78%;
     min-height: 30vh;
     background-color: var(--bg-color);
     margin: auto;
@@ -801,54 +802,55 @@ body{
 }
 
 .Section-me{
-    width: 100%;
-    min-height: 10vh;
-    
-    gap: 2rem;
-    padding: 2rem;
-    
+    width: 78%;
+    min-height: 30vh;
+    background-color: var(--bg-color);
+    margin: auto;
     display: flex;
-    flex-flow: row wrap ;
-    justify-content: flex-start;
-    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
 
 }
 
 .Me-h2{
-    width: 20%;
-    margin-left: 2%;
+    width: auto;
+    max-height: 5rem ;
+    background-color: var(--acent-color);
+    border-radius: 3px;
+    padding: .5rem;
     font-family: var(--font-main);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    color: var(--sec-color);
-    font-weight: 400;
+    color: var(--main-color);
+    font-weight: 900;
     letter-spacing: 7px;
     word-spacing: 2.2rem;
-    text-align: start;
+    text-align: center;
 }
 
 .Me-nav{
-    width: 60%;
+    width: 80%;
 }
 
 .Me-ul{
     width: 100%;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .Me-li{
     width: auto;
-    font-family: var(--font-main);
+    font-family: var(--font-sec);
     font-size: 1rem;
     text-transform: uppercase;
     color: var(--sec-color);
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 5px;
-    word-spacing: .5rem;
     text-align: start;
     position: relative;
 }
@@ -858,14 +860,10 @@ body{
     transition: all .5s ease;
 }
 .Me-li::after{
-    content: '/';
+    content: '';
     position: absolute;
     top: 0%;
     left: 100%;
-}
-.Me-li:last-child{
-    content:'';
-    
 }
 
 .Me-a{}
@@ -907,9 +905,9 @@ body{
 }
 
 .Me-wrap.isActive{
-    width: 100%;
+    width: 80%;
     min-height: 50vh;
-    ;
+    margin: auto;
     gap: 2rem;
     padding: 2rem;
 
