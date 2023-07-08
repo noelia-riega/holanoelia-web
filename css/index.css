@@ -308,22 +308,21 @@ body{
    font-weight: 900;
    letter-spacing: 5px;
    text-transform: uppercase;
-   animation: transform;
-   animation-iteration-count: infinite;
-   translate: all 5s ease-in;
+   
+   animation-name: movetext;
+   animation-duration: 2.5s;
+   
 }
 
-@keyframes decotext{
-    from{
-        translate: translateX(0%); 
+@keyframes movetext{
+    0%{
+        transform: translateX(300%);
+         
     }
-    to{
-        transition: translateX(100%);
+    100%{
+        transform: translateX(0);
     }
 }
-
-
-
 .Main-noeimg{
     grid-column: span 1;
     grid-row: span 1;
