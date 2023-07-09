@@ -796,7 +796,6 @@ body{
     width: 100%;
     max-height: 110vh;
     background: var(--bg-color);
-    margin-bottom: 5vh;
     position: relative;
 }
 
@@ -819,10 +818,10 @@ body{
     background-color: var(--bg-color);
     margin: auto;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
 }
 
 .Work-h2{
@@ -842,18 +841,25 @@ body{
 }
 
 .Work-ul{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .Work-li{
-    width: 2rem;
-    height: 2rem;
+    width: auto;
+    font-family: var(--font-sec);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-align: start;
 }
+
 
 .Work-webs{
     width: 90%;
@@ -987,7 +993,7 @@ body{
 .Me-span{
     width: 100%;
     font-family: var(--font-sec);
-    font-size: 1rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: var(--sec-color);
     font-weight: 900;
