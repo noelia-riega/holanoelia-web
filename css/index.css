@@ -239,8 +239,6 @@ body{
 
 .Main-section{
     width: 80%;
-    /*background-color: lightblue;*/
-
     display: grid;
     grid-template-columns: repeat( 2 , 1fr );
     grid-auto-rows: 80vh;
@@ -250,40 +248,54 @@ body{
     grid-column: span 1;
     grid-row: span 1;
 
-    margin: 1rem;
-
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: end;
 
     position: relative;
 }
 
 .Noe-h2{
     width: 100%;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
 }
 
-/*.Main-ul{
+.Main-ul{
     width: 50%;
     display: grid;
-    grid-template-columns: repeat( 3 , 1fr );
-    grid-template-rows: repeat( 3 , 1fr) ;
+    grid-template-columns: repeat( 3 , 4rem );
+    grid-template-rows: repeat( 2 , 4rem);
 }
+
 .Main-li{
     width: 100%;
 }
+
 .Main-img.Magenta{
     width: 4rem;
     height: 4rem;
+    grid-column: span 1;
+    grid-row: span 1;
     background-color: var(--acent-color);
 }
 
 .Main-img.Black{
     width: 4rem;
     height: 4rem;
+    grid-column: span 1;
+    grid-row: span 1;
     background-color: var(--text-color);
-}*/
+}
+
+.Main-img.Bg{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--bg-color);
+}
+
 
 .Main-text{
     grid-column: span 1;
