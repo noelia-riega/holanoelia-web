@@ -860,7 +860,16 @@ body{
     text-align: start;
 }
 
+.Work-li:nth-child(2n){
+    font-size: 1rem;
+}
 
+.Work-li:first-child:hover{
+    color: var(--acent-color);
+}
+.Work-li:nth-child(3n):hover{
+    color: var(--acent-color);
+}
 .Work-webs{
     width: 90%;
     height: 42vh;
