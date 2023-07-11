@@ -1084,6 +1084,31 @@ body{
     text-align: start;
 }
 
+.Me-wrap{
+    width: 90%;
+    margin: auto;
+    background-color: bisque;
+
+}
+.Me-ul{
+    width: 100%;
+    margin: auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr );
+    grid-auto-rows: auto;
+
+    
+}
+.Me-li{
+    margin: auto;
+    width: 20rem;
+    height: 20rem;
+}
+.Me-img{
+    object-fit: cover;
+
+}
 @media(max-width:1000px){
     
 }
