@@ -882,18 +882,9 @@ body{
 
 }
 
-.Work-design{
-    width: 90%;
-    height: 42vh;
-    margin: auto;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: start;
 
-}
 
-.Work-article{
+.Webs-article{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -902,7 +893,7 @@ body{
 }
 
 
-.Work-a{
+.Webs-a{
     width: 100%;
     position: relative;
     border-radius: 10px;
@@ -912,7 +903,7 @@ body{
     align-items: center;
 }
 
-.Work-img{
+.Webs-img{
     width: 100%;
     max-height: 50vh;
 
@@ -926,20 +917,20 @@ body{
     opacity: 90%;
 }
 
-.Work-img:hover{
+.Webs-img:hover{
     filter: blur(0);
     transform: scale(1);
     transition: all .5s ease;
     opacity: 100%;
 }
 
-.Work-h3{
-    width: auto;
+.Webs-h3{
+    width: 40%;
     margin: auto;
     
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: 33%;
     
     font-family: var(--font-sec);
     font-size: 3rem;
@@ -951,6 +942,73 @@ body{
     
 }
 
+.Work-design{
+    width: 90%;
+    height: 42vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.Design-article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Design-wrap{
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Design-img{
+    width: 100%;
+    max-height: 50vh;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+    
+    filter: grayscale(80%) blur( 3px );
+    transform: scale(0.8);
+    transition: all .5s ease;
+    opacity: 90%;
+}
+
+.Design-img:hover{
+    filter: blur(0);
+    transform: scale(1);
+    transition: all .5s ease;
+    opacity: 100%;
+}
+
+.Design-h3{
+    width: 80%;
+    margin: auto;
+    
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    
+    font-family: var(--font-sec);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px var(--text-color);
+}
 
 @media(max-width:1000px){
     .Work-nav{
@@ -958,6 +1016,7 @@ body{
         flex-flow: column;
         align-items: flex-start;
     }
+    
 }
 
 @media(max-width:600px){
