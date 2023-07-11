@@ -881,6 +881,17 @@ body{
 
 }
 
+.Work-design{
+    width: 90%;
+    height: 42vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+
+}
+
 .Work-article{
     display: flex;
     flex-flow: row wrap;
