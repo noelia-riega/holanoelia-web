@@ -254,6 +254,14 @@ body{
 
 .Noe-h2{
     width: 100%;
+    object-fit: contain;
+    transform: scale(90%);
+    transition: all 2s ease;
+
+}
+
+.Noe-h2:hover{
+    transform: scale(100%);
 }
 
 .Main-ul{
@@ -447,11 +455,11 @@ body{
     flex-flow: column;
     justify-content: center;
     align-items: end;
+
 }
 
 .Main-decotext{
    width: auto;
-   height: auto;
    padding: .5rem;
    background-color: var(--acent-color);
    border-radius: 3px;
@@ -461,7 +469,6 @@ body{
    font-weight: 900;
    letter-spacing: 5px;
    text-transform: uppercase;
-   
    animation-name: movetext;
    animation-duration: 2.5s;
    
@@ -484,11 +491,21 @@ body{
     flex-flow: row;
     justify-content: center;
     align-items: center;
+
+    transform: scale(90%);
+    transition: all 2s ease;
+}
+
+.Main-noeimg:hover{
+    transform: scale(100%);
 }
 
 .Noe-img{
     object-fit: contain;
+
+
 }
+
 
 .Hola-h3{
     grid-column: span 1;
@@ -498,6 +515,12 @@ body{
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    transform: scale(90%);
+    transition: all 2s ease;
+}
+
+.Hola-h3:hover{
+    transform: scale(100%);
 }
 
 .Section-form{
