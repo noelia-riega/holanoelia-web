@@ -1106,6 +1106,8 @@ body{
     height: 20rem;
 }
 .Me-img{
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
 
 }
