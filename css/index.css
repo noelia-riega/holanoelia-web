@@ -1085,32 +1085,37 @@ body{
 }
 
 .Me-wrap{
-    width: 90%;
+    width: 100%;
     margin: auto;
-    background-color: bisque;
-
+    padding: 2rem;
 }
+
 .Me-ul{
     width: 100%;
     margin: auto;
-    background-color: aqua;
     display: grid;
     grid-template-columns: repeat( 4 , 1fr );
     grid-auto-rows: auto;
-
-    
+    gap: 1.5rem;  
 }
+
 .Me-li{
     margin: auto;
-    width: 20rem;
-    height: 20rem;
+    cursor: pointer;
+    filter: grayscale(90%);
+    border-radius: 2rem;
+}
+
+.Me-li:hover{
+    filter: grayscale(0);
 }
 .Me-img{
     width: 20rem;
     height: 20rem;
     object-fit: cover;
-
+    border-radius: .5rem;
 }
+
 @media(max-width:1000px){
     
 }
