@@ -599,6 +599,7 @@ body{
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 @media(max-width:1000px){
@@ -786,6 +787,8 @@ body{
     width: 50%;
     min-height: 100vh;
     padding-top: 4rem;
+  
+
 }
 
 .About-article{
@@ -795,6 +798,8 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+
+    
 }
 
 .About-h3{
