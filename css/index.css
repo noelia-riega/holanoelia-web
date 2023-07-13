@@ -193,7 +193,7 @@ body{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         gap: 3rem;
     }
     .Header-btn{
@@ -209,6 +209,7 @@ body{
         position: absolute;
         top: 130%;
         left: 0%;
+        display: none;
     }
 
 }
@@ -493,6 +494,7 @@ body{
         transform: translateX(0);
     }
 }
+
 .Main-noeimg{
     grid-column: span 1;
     grid-row: span 1;
@@ -632,7 +634,11 @@ body{
         left: 50%;
     }
 }
-
+@media(max-width:720px){
+    .Main-decotext{
+        font-size: 1rem;
+    }
+}
 @media(max-width:600px){
     .Main-section{
         display: block;
@@ -647,9 +653,6 @@ body{
     .Main-text{   
         justify-content: center;
         align-items: center;
-    }
-    .Main-decotext{
-        font-size: 1rem;
     }
     .Hola-h3{
         width: 80%;
@@ -669,6 +672,11 @@ body{
     }
 }
 
+@media(max-width:375px){
+    .Main-section{
+        
+    }
+}
 .Footer{
     width: 100%;
     min-height: 10vh;
