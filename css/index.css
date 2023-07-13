@@ -189,19 +189,24 @@ body{
 @media(max-width:1000px){
     .Header-wrap{
         width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
     }
     .Header-btn{
         display: block;
     }
 
     .Header-ul{
+        background-color: var(--main-color);
         display: none;
-        /*display: flex;
+        display: flex;
         flex-flow: column;
         position: absolute;
-        top: 100%;
-        left: 30%;*/
-
+        top: 0%;
+        left: 0%;
     }
 }
 
@@ -213,6 +218,7 @@ body{
 
 .Main{
     width: 100%;
+    min-height: 200vh;
     background: var(--bg-color);
     display: flex;
     justify-content: center;
@@ -527,7 +533,7 @@ body{
     grid-column: span 2;
     grid-row: span 1;
     margin: 1.5rem;
-
+    
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -543,7 +549,7 @@ body{
 
 .Header-form{
     width: 100%;
-    min-height: 6vh;
+    height: 6vh;
     border-radius: 10px 10px 0 0;
     background-color: var(--acent-color);
     display: flex;
@@ -627,22 +633,42 @@ body{
         display: block;
         gap: 1rem;
     }
-    .Noe-h3{
-        font-size: 1.5rem;
-        text-align: center;
+    
+    .Main-h2{
+        width: 80%;
+        margin: auto;
     }
+
+    .Main-text{   
+        justify-content: center;
+        align-items: center;
+    }
+    .Main-decotext{
+        font-size: 1rem;
+    }
+    .Hola-h3{
+        width: 80%;
+        margin: auto;
+    }
+
     .Form-noe{
-
+        max-height: 10vh;
     }
 
+    .Form-h2{
+        font-size: 1rem;
+    }
+
+    .Form-submit{
+        font-size: .8rem;
+    }
 }
 
 .Footer{
     width: 100%;
     min-height: 10vh;
-    /*background-color: gray;*/
     padding: 0 1rem 0 1rem;
-
+    margin-top: 3vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -650,8 +676,7 @@ body{
 
 .Footer-wrap{
     width: 50%;
-    min-height: 6vh;
-    /*background-color: lightblue;*/
+    height: 10vh;
     padding: 1rem;
 
     display: flex;
@@ -706,6 +731,7 @@ body{
 
 .About-main{
     width: 100%;
+
 }
 
 .About-wrap{
@@ -758,17 +784,17 @@ body{
 
 .About-artwrap{
     width: 50%;
-    min-height: 200vh;
+    min-height: 100vh;
     padding-top: 4rem;
 }
 
 .About-article{
     width: 100%;
-    gap: 3rem;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
 }
 
 .About-h3{
@@ -785,7 +811,7 @@ body{
 
 .About-p{
     width: 60%;
-    min-height: 65vh;
+    height: 72vh;
     font-family: var(--font-sec);
     color: var(--text-color);
     font-size: 15px;
@@ -796,6 +822,9 @@ body{
 
 }
 
+.About-arrow{
+    width: 5rem;
+}
 
 @media(max-width:1000px){
     .About-wrap{
@@ -814,9 +843,10 @@ body{
 
 .Main-work{
     width: 100%;
-    height: 110vh;
+    max-height: 100vh;
     background: var(--bg-color);
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .Main-work::before{
@@ -1047,6 +1077,8 @@ body{
 
 .Main-me{
     width: 100%;
+    min-height: 150vh;
+    margin-bottom: 5vh;
     background: var(--bg-color);
     position: relative;
 }
