@@ -576,7 +576,7 @@ body{
 }
 
 .Form-h2{
-    width: auto;
+    width: 100%;
     font-family: var(--font-main);
     font-size: 1.25rem;
     font-weight: 900;
@@ -586,7 +586,7 @@ body{
 }
 
 .Form-noe{
-    width: 85%;
+    width: 82%;
     margin: auto;
     padding: 1rem;
 
@@ -673,10 +673,19 @@ body{
 }
 
 @media(max-width:375px){
+    .Main{
+        min-height: 50vh;
+    }
+
     .Main-section{
-        
+        width: 100%;
+    }
+
+    .Section-form{
+        width: 100%;
     }
 }
+
 .Footer{
     width: 100%;
     min-height: 10vh;
