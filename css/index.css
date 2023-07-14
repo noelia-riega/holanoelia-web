@@ -707,7 +707,7 @@ body{
     }
 }
 
-@media screen{
+@media(max-width:375px){
     .Main{
         width: 100%;
     }
@@ -805,7 +805,7 @@ body{
     }
 }
 
-@media screen{
+@media(max-width:375px){
     .Footer{
         display: flex;
         flex-flow: row;
@@ -838,7 +838,6 @@ body{
 
 .About-wrap{
     width: 100%;
-    /*background-color: lightblue;*/
 
     display: flex;
     flex-flow: row wrap;
