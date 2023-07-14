@@ -883,18 +883,18 @@ body{
 .About-artwrap{
     width: 50%;
     padding-top: 4rem;
-  
-
+    display: flex;
+    flex-flow: column;
+    gap: 5rem;
 }
 
 .About-article{
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-flow: column;
-    justify-content:space-around;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
   
 }
 
@@ -927,6 +927,10 @@ body{
     width: 5rem;
 }
 
+@media(min-width:1920px){
+    
+}
+
 @media(max-width:1000px){
     .About-wrap{
         display: block;
@@ -941,6 +945,14 @@ body{
         width: 100%;
     }
 }
+
+@media(max-width:720px){
+
+}
+@media(max-width:375px){
+
+}
+
 
 .Main-work{
     width: 100%;
