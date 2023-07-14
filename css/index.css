@@ -620,7 +620,7 @@ body{
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 @media(min-width:1920px){
@@ -635,6 +635,9 @@ body{
     }
     .Form-submit{
         font-size: 1.5rem;
+    }
+    .Main::before{
+        left: 79.5%;
     }
 }
 
@@ -761,6 +764,16 @@ body{
     color: var(--text-color);
     transition: all .5s ease;
 
+}
+
+@media(min-width:1920px){
+    .Footer-ul{
+        width: 50%;
+    }
+    .Footer-li{
+        width: 3rem;
+        height: 3rem;
+    }
 }
 @media(max-width:1000px){
     .Footer{
