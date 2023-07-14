@@ -142,7 +142,7 @@ body{
     color: var(--text-color);
     font-weight: 900;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 5px;
     position: relative;
 }
@@ -184,6 +184,20 @@ body{
 }
 
 .Header-a{
+}
+
+@media(min-width:1920px){
+    .Header-ul{
+        gap: 1.5rem;
+    }
+    .Header-li{
+        font-size: 2rem;
+
+    }
+    .Header-h1{
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 @media(max-width:1000px){
@@ -601,11 +615,27 @@ body{
     border-radius: 0 0 10px 10px;
     background: var(--acent-color);
     font-family: var(--font-main);
+    font-size: 1rem;
     color: var(--main-color);
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media(min-width:1920px){
+    .Main-decotext{
+        font-size: 5rem;
+    }
+    .Form-h2{
+        font-size: 2rem;
+    }
+    .Form-noe{
+        font-size: 1.5rem;
+    }
+    .Form-submit{
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width:1000px){
