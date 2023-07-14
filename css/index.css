@@ -558,7 +558,7 @@ body{
     margin: 1.5rem;
     
     display: flex;
-    flex-flow: column;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -576,7 +576,7 @@ body{
     border-radius: 10px 10px 0 0;
     background-color: var(--acent-color);
     display: flex;
-    flex-flow: column;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     letter-spacing: 5px;
@@ -589,6 +589,7 @@ body{
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
     border-radius: 0 0 10px 10px;    
 }
 
@@ -706,16 +707,23 @@ body{
     }
 }
 
-@media(max-width:375px){
+@media screen{
     .Main{
         width: 100%;
     }
 
     .Main-section{
-        width: 100%;
+        width: 80%;
     }
+
+    .Main-h2{
+        padding: 1rem;
+    }
+
     .Section-form{
         width: 100%;
+        margin: auto;
+        padding: 2rem;
     }
 
     .Section-wrap{
@@ -723,7 +731,7 @@ body{
     }
     
     .Form-h2{
-        font-size: .5rem;
+        font-size: .8rem;
     }
 }
 
@@ -797,7 +805,7 @@ body{
     }
 }
 
-@media(max-width:375px){
+@media screen{
     .Footer{
         display: flex;
         flex-flow: row;
@@ -805,7 +813,7 @@ body{
         align-items: center;
     }
     .Footer-wrap{
-        width: 100%;
+        width: 40%;
         display:flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -818,7 +826,7 @@ body{
         align-items: center;
     }
     .Footer-li{
-        width: calc(100% / 3)
+        width: 1.5rem
     }
 
 }
