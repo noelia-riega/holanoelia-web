@@ -210,6 +210,10 @@ body{
         align-items: center;
         gap: 3rem;
     }
+    .Header-h1{
+        width: 3rem;
+        height: 3rem;
+    }
     .Header-btn{
         display: block;
     }
@@ -228,7 +232,7 @@ body{
 
 }
 
-@media(max-width:600px){
+@media(max-width:720px){
     .Header-wrap{
         width: 100%;
         justify-content: center;
@@ -237,7 +241,6 @@ body{
 
 .Main{
     width: 100%;
-    min-height: 200vh;
     background: var(--bg-color);
     display: flex;
     justify-content: center;
@@ -555,7 +558,7 @@ body{
     margin: 1.5rem;
     
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
@@ -671,8 +674,6 @@ body{
     .Main-decotext{
         font-size: 1rem;
     }
-}
-@media(max-width:600px){
     .Main-section{
         display: block;
         gap: 1rem;
@@ -707,21 +708,27 @@ body{
 
 @media(max-width:375px){
     .Main{
-        min-height: 50vh;
+        width: 100%;
     }
 
     .Main-section{
         width: 100%;
     }
-
     .Section-form{
         width: 100%;
+    }
+
+    .Section-wrap{
+        width: 100%;
+    }
+    
+    .Form-h2{
+        font-size: .5rem;
     }
 }
 
 .Footer{
     width: 100%;
-    min-height: 10vh;
     padding: 0 1rem 0 1rem;
     margin-top: 3vh;
     display: flex;
@@ -731,7 +738,6 @@ body{
 
 .Footer-wrap{
     width: 50%;
-    height: 10vh;
     padding: 1rem;
 
     display: flex;
@@ -741,8 +747,6 @@ body{
 
 .Footer-ul{
     width: 45%;
-    min-height: 6vh;
-    /*background-color: yellow;*/
     gap: 1rem;
 
     display: flex;
@@ -753,7 +757,6 @@ body{
 .Footer-li{
     width: 2.5rem;
     height: 2.5rem;
-    /*background-color: pink;*/
 }
 
 .Footer-svg{
@@ -787,11 +790,37 @@ body{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:720px){
 
     .Footer-ul{
         width: 80%;
     }
+}
+
+@media(max-width:375px){
+    .Footer{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer-wrap{
+        width: 100%;
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer-ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Footer-li{
+        width: calc(100% / 3)
+    }
+
 }
 
 .About-main{
