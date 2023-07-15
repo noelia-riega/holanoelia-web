@@ -915,7 +915,7 @@ body{
     
     font-family: var(--font-sec);
     color: var(--text-color);
-    font-size: 15px;
+    font-size: .9375rem;
     letter-spacing: 2px;
     word-spacing: 2px;
     text-align: end;
@@ -928,21 +928,35 @@ body{
 }
 
 @media(min-width:1920px){
-    
+    .About-name{
+        font-size: 3rem;
+    }
+    .About-h3{
+        font-size: 3rem;
+    }
+    .About-p{
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width:1000px){
     .About-wrap{
         display: block;
+        
     }
     .About-section{
         position: static;
         width: 100%;
-        min-height: 100vh;
+        min-height: 110vh;
+        padding-top: 0;
     }
 
     .About-artwrap{
-        width: 100%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+
     }
 }
 
@@ -952,7 +966,6 @@ body{
 @media(max-width:375px){
 
 }
-
 
 .Main-work{
     width: 100%;
