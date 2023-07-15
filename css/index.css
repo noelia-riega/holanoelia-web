@@ -1290,7 +1290,6 @@ body{
 
 .Main-me{
     width: 100%;
-    min-height: 150vh;
     margin-bottom: 5vh;
     background: var(--bg-color);
     position: relative;
@@ -1311,7 +1310,6 @@ body{
 
 .Section-me{
     width: 78%;
-    min-height: 30vh;
     padding: 4rem 0 4rem 0;
     background-color: var(--bg-color);
     margin: auto;
@@ -1340,7 +1338,7 @@ body{
 }
 
 .Me-span{
-    width: 100%;
+    width: 80%;
     font-family: var(--font-sec);
     font-size: 3rem;
     text-transform: uppercase;
@@ -1382,9 +1380,61 @@ body{
     border-radius: .5rem;
 }
 
-@media(max-width:1000px){
-    
-}
-@media(max-width:600px){
+@media(min-width:1920px){
+    .Main-me::before{
+        left: 80%;
+    }
 
+}
+@media(max-width:1000px){
+    .Main-me::before{
+        left: 50%;
+    }
+    .Section-me{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Me-h2{
+        text-align: center;
+    }
+    .Me-span{
+        text-align: center;
+    }
+    .Me-ul{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat( 2 , 1fr );
+        grid-auto-rows: auto;
+        gap: 1.5rem;  
+    }
+    .Me-img{
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
+}
+@media(max-width:720px){
+    .Me-ul{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 1.5rem;  
+    }
+    .Me-img{
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
+    .Me-li{
+        margin: auto;
+        cursor: pointer;
+        filter: grayscale(90%);
+        border-radius: 3px;
+    }
 }
