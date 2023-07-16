@@ -309,6 +309,8 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    animation-name: movetext;
+    animation-duration: 2.5s;
 }
 
 .Main-li{
@@ -316,8 +318,8 @@ body{
 }
 
 .Main-img.Magentaone{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--acent-color);
     border-radius: 3px;
     object-fit: contain;
@@ -331,8 +333,8 @@ body{
 }
 
 .Main-img.Magentatwo{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--acent-color);
     border-radius: 3px;
     object-fit: contain;
@@ -346,8 +348,8 @@ body{
 }
 
 .Main-img.Blackone{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--text-color);
     border-radius: 3px;
     object-fit: contain;
@@ -361,8 +363,8 @@ body{
 }
 
 .Main-img.Blacktwo{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--text-color);
     border-radius: 3px;
     object-fit: contain;
@@ -375,15 +377,15 @@ body{
 
 }
 
-
 .Main-img.Bg{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--bg-color);
     border-radius: 3px;
     object-fit: contain;
 
     animation-name: cubeanimation;
+    
     animation-duration: 3s;
     animation-delay: 2s;
     transition: all 2s ease;
@@ -1162,6 +1164,7 @@ body{
 
 .Design-lightbox.isActive{
     display: flex;
+    z-index: 1;
 
 }
 .Design-btn{
