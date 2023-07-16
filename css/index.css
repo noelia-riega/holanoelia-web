@@ -288,7 +288,7 @@ body{
 }
 
 .Main-ul{
-    width: 30%;
+    width: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -300,8 +300,8 @@ body{
 }
 
 .Main-img.Magentaone{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--acent-color);
     border-radius: 3px;
     object-fit: contain;
@@ -315,8 +315,8 @@ body{
 }
 
 .Main-img.Magentatwo{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--acent-color);
     border-radius: 3px;
     object-fit: contain;
@@ -330,8 +330,8 @@ body{
 }
 
 .Main-img.Blackone{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--text-color);
     border-radius: 3px;
     object-fit: contain;
@@ -345,8 +345,8 @@ body{
 }
 
 .Main-img.Blacktwo{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--text-color);
     border-radius: 3px;
     object-fit: contain;
@@ -361,8 +361,8 @@ body{
 
 
 .Main-img.Bg{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--bg-color);
     border-radius: 3px;
     object-fit: contain;
