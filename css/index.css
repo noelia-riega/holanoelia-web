@@ -73,12 +73,9 @@ body{
 
 .Header{
     width: 100%;
+    margin: auto;
     background-color: var(--bg-color);
     padding: 1rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     z-index: 1;
 
@@ -87,13 +84,13 @@ body{
 .Header-wrap{
     width: 80%;
     margin: auto;
-
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
-    position: relative;
+    gap: 3rem;
+    
+    
 }
 
 .Header-h1{
@@ -123,19 +120,39 @@ body{
     transition: all .5s ease;
 }
 
+.Header-btn{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--text-color);
+    display: none;
+    
+}
 
-.Header-ul{
-    width: 30%;
-    gap: 1rem;
-
+.Header-nav{
+    width: 90%; 
+    margin: auto;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    
+    
+
+}
+
+.Header-ul{
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
 .Header-li{
     width: auto;
+    
     font-family: var(--font-main);
     text-transform: uppercase;
     color: var(--text-color);
@@ -175,12 +192,7 @@ body{
 .Header-li:active{
     color: var(--text-color);
 }
-.Header-btn{
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: var(--text-color);
-    display: none;
-}
+
 
 @media(min-width:1920px){
     .Header-ul{
@@ -197,12 +209,18 @@ body{
 }
 
 @media(max-width:1000px){
-    .Header-wrap{
-        width: 50%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
+    .Header-nav{
+        width: 80%;
+        height: 0;
+
+        overflow: hidden;
+        transition: all 1.5s ease;
+    }
+
+    .Header-nav.isActive{
+        width: 80%;
+        height: 40vh;
+        display: block;
         gap: 3rem;
     }
     .Header-h1{
@@ -217,12 +235,10 @@ body{
         width: 100%;
         height: 40vh;
         background-color: var(--main-color);
-        display: flex;
-        flex-flow:column;
-        position: absolute;
-        top: 130%;
-        left: 0%;
-        display: none;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+       
     }
 
 }
@@ -1126,6 +1142,52 @@ body{
     text-align: center;
     letter-spacing: 5px;
     text-shadow: 1px 1px 2px var(--text-color);
+}
+
+.Design-lightbox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.252);
+    backdrop-filter: blur(5px);
+
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Design-lightbox.isActive{
+    display: flex;
+
+}
+.Design-btn{
+    width: 4rem;
+    height: 4rem;
+    color: var(--text-color);
+
+}
+.Design-svg{
+    width: 4rem;
+    height: 4rem;
+}
+.Design-svg:hover{
+    color: var(--acent-color);
+}
+
+.Design-svg:active{
+    color: var(--main-color);
+}
+
+.Lightbox-img{
+    width: 100%;
+    max-width: 960px;
+    max-height: 60vh;
+    object-fit: contain;
+     
 }
 
 @media(min-width:1920px){
