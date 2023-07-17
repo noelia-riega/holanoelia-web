@@ -1151,7 +1151,6 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.252);
     backdrop-filter: blur(5px);
-
     display: none;
     flex-flow: column nowrap;
     justify-content: center;
@@ -1167,6 +1166,7 @@ body{
     z-index: 1;
 
 }
+
 .Design-btn{
     width: 4rem;
     height: 4rem;
