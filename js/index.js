@@ -39,25 +39,6 @@ headerBtn.addEventListener(`click` , ()=>{
 //})
 
 
-//Cuando hago CLICK en designWrap
- //designLightBox le add isActive
- //designWrap TRAE su atributo "SRC"
- //lightBoxImg COLOCA el "SRC" de designImg  
-
- /* const enlacesDesign = document.querySelectorAll(`.Design-article .Design-img`)
- const designLighBox = document.querySelector(`.Design-lightbox`)
- const lightBoxImg = document.querySelector(`.Lightbox-img`)
-
- enlacesDesign.forEach(( eachEnlacesDesign , i )=>{
-    enlacesDesign[i].addEventListener(`click` , ( e )=>{
-        e.preventDefault()
-        let enlacesDesign = eachEnlacesDesign.querySelector(`.Design-img`).src
-        console.log( enlacesDesign )
-
-        designLighBox.classList.add(`isActive`)
-        lightBoxImg.setAttribute(`src` , enlacesDesign)
-    })
- }) */
 
 // Cuando CLICK en btnPrev hace una FUNTION
  //MeSliderActive++
@@ -81,30 +62,31 @@ headerBtn.addEventListener(`click` , ()=>{
  console.log( btnNext )
  console.log( meImgList )
 
+ 
  let sliderActive = 0
+ let setActive = ()=>{
+    meImgList.forEach(( eachMeImg , index )=>{
+        meImgList[index].classList.remove(`isActive`)
+    })
+    meImgList[sliderActive].classList.add(`isActive`)
+ }
 
- btnPrev.addEventListener(`click` , ()=>{
+ btnNext.addEventListener(`click` , ()=>{
 
     sliderActive++
-    if( sliderActive >= 12 ){
+    if( sliderActive >= meImgList.length ){
         sliderActive = 0
     }
 
-    meImgList.forEach(( eachMeImg , index )=>{
-        meImgList[index].classList.remove(`isActive`)
-    })
-    meImgList[sliderActive].classList.add(`isActive`)
+    setActive()
 
  })
 
- btnNext.addEventListener(`click` , ()=>{
+ btnPrev.addEventListener(`click` , ()=>{
     sliderActive--
     if( sliderActive <= -1 ){
-        sliderActive = 11
+        sliderActive = meImgList.length - 1
     }
 
-    meImgList.forEach(( eachMeImg , index )=>{
-        meImgList[index].classList.remove(`isActive`)
-    })
-    meImgList[sliderActive].classList.add(`isActive`)
+    setActive()
  })
