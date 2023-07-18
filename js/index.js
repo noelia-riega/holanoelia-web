@@ -13,31 +13,6 @@ headerBtn.addEventListener(`click` , ()=>{
     headerNav.classList.toggle(`isActive`)
 })
 
-//Cuando hago CLICK en designWrap hace una FUNTION
-
-
-
-//const designWrap     = document.querySelector(`.Design-wrap`)
-//const designLightBox = document.querySelector(`.Design-lightbox`)
-//const designBtn      = document.querySelector(`.Design-btn`)
-
-//console.log( designWrap )
-//console.log( designLightBox )
-//console.log( designBtn )
-
-//designLighBox le add la clase isActive
-
-//designWrap.addEventListener(`click` , ()=>{
-//    designLightBox.classList.add(`isActive`)
-//})
-
-//Cuando hago CLICK en designBtn hace una FUNTION
-    //designLightBox le REMOVE la clase isActive
-
-//designBtn.addEventListener(`click` , ()=>{
-//    designLightBox.classList.remove(`isActive`)
-//})
-
 
 
 // Cuando CLICK en btnPrev hace una FUNTION
@@ -51,8 +26,6 @@ headerBtn.addEventListener(`click` , ()=>{
 //MESliderActive--
  //Si MeSliderActive es IGUAL o MENOR a -1
  //Entonces MesliderActive es igual a 11
-
-
 
  const btnPrev      = document.querySelector(`.Btn-prev`)
  const btnNext      = document.querySelector(`.Btn-next`)
