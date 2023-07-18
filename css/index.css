@@ -250,6 +250,7 @@ body{
     }
 }
 
+
 .Main{
     width: 100%;
     background: var(--bg-color);
@@ -644,7 +645,7 @@ body{
     }
 }
 
-@media(max-width:375px){
+@media(max-width:480px){
     .Main{
         width: 100%;
     }
@@ -742,7 +743,7 @@ body{
     }
 }
 
-@media(max-width:375px){
+@media(max-width:480px){
     .Footer{
         display: flex;
         flex-flow: row;
@@ -926,11 +927,6 @@ body{
     }
 }
 
-@media(max-width:375px){
-    .About-section{
-        max-height: 50vh;
-    }
-}
 
 .Main-work{
     width: 100%;
@@ -1246,20 +1242,27 @@ body{
     }
 }
 
-@media(max-width:375px){
+@media(max-width:480px){
+    .Work-wrap{
+        justify-content: center;
+        align-items: center;
+    }
     .Work-h2{
-        width: 100%;
-        font-size: .8rem;
+        width: auto;
+        font-size: 2rem;
     }
     .Work-ul{
-        width: 100%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
     }
     .Work-li{
         width: 100%;
         font-size: 1rem;
+        text-align: center;
     }
     .Webs-h3{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
@@ -1358,8 +1361,8 @@ body{
 }
 
 .Me-btn{
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     position: absolute;
     color: var(--text-color);
     top: calc( 50% - 2rem );
@@ -1373,6 +1376,7 @@ body{
 }
 
 @media(min-width:1920px){
+
     .Main-me::before{
         left: 80%;
     }
@@ -1385,20 +1389,25 @@ body{
 
 }
 @media(max-width:1000px){
+
     .Main-me::before{
         left: 50%;
     }
+
     .Section-me{
         width: 100%;
         justify-content: center;
         align-items: center;
     }
+
     .Me-h2{
         text-align: center;
     }
+
     .Me-span{
         text-align: center;
     }
+
     .Me-slider{
         width: 100%;
 
@@ -1418,7 +1427,9 @@ body{
     }
     
 }
+
 @media(max-width:720px){
+
     .Me-slider{
         width: 100%;
     }
@@ -1435,5 +1446,33 @@ body{
     }
     .Btn-next{
         right: 8%;
+    }
+}
+
+@media(max-width:480px){
+
+    .Me-h2{
+        font-size: 2rem;
+    }
+    .Me-span{
+        font-size: 1.5rem;
+    }
+
+    .Me-wrap{
+        height: 40vh;
+
+    }
+
+    .Me-btn{
+        width: 1.5rem;
+        height: 1.5rem;
+
+    }
+
+    .Btn-prev{
+        left: 11%;
+    }
+    .Btn-next{
+        right: 11%;
     }
 }
