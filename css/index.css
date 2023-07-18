@@ -1095,17 +1095,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.Design-wrap{
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .Design-img{
@@ -1332,36 +1323,53 @@ body{
     text-align: start;
 }
 
+.Me-slider{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
 .Me-wrap{
     width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.099);
+    border-radius: 8px;
     margin: auto;
-    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Me-ul{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat( 4 , 1fr );
-    grid-auto-rows: auto;
-    gap: 1.5rem;  
-}
-
-.Me-li{
-    margin: auto;
-    cursor: pointer;
-    filter: grayscale(90%);
-    border-radius: 3px;
-}
-
-.Me-li:hover{
-    filter: grayscale(0);
-}
 .Me-img{
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: .5rem;
+    
+    width: auto;
+    max-height: 70vh;
+    display: none;
+
+}
+.Me-img.isActive{
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #535050;
+    box-shadow:  11px 11px 32px #524f4f,
+                 -11px -11px 32px #545151;
+}
+
+.Me-btn{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    
+    top: calc( 50% - 2rem );
+}
+
+.Btn-prev{
+    left: 5%;
+}
+.Btn-next{
+    right: 5%;
 }
 
 @media(min-width:1920px){
@@ -1385,40 +1393,7 @@ body{
     .Me-span{
         text-align: center;
     }
-    .Me-ul{
-        width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat( 2 , 1fr );
-        grid-auto-rows: auto;
-        gap: 1.5rem;  
-    }
-    .Me-img{
-        width: 30rem;
-        height: 30rem;
-        object-fit: cover;
-        border-radius: .5rem;
-    }
 }
 @media(max-width:720px){
-    .Me-ul{
-        width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        gap: 1.5rem;  
-    }
-    .Me-img{
-        width: 30rem;
-        height: 30rem;
-        object-fit: cover;
-        border-radius: .5rem;
-    }
-    .Me-li{
-        margin: auto;
-        cursor: pointer;
-        filter: grayscale(90%);
-        border-radius: 3px;
-    }
+
 }
