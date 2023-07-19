@@ -6,5 +6,4 @@ $mensaje = $_POST["mensaje"];
 $contenido = "Nombre: " . $nombre . ".\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
 mail($destino,"Hablemos", $contenido)
 header("Location:arigatitos.html");
-
 ?>
