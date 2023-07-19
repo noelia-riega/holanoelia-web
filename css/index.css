@@ -889,6 +889,9 @@ body{
 }
 
 @media(min-width:1920px){
+    .About-section{
+        max-width: 50%;
+    }
     .About-name{
         font-size: 3rem;
     }
@@ -1046,8 +1049,18 @@ body{
 
 .Work-webs{
     width: 90%;
-    margin: auto;
     padding: 0 0 5rem 0;
+    display: none;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+}
+.Work-webs.isActive{
+    width: 90%;
+    margin: auto;
+    padding: 0 0 10rem 0;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -1055,7 +1068,6 @@ body{
     position: relative;
 
 }
-
 .Webs-article{
     display: flex;
     flex-flow: row wrap;
@@ -1122,6 +1134,17 @@ body{
 .Work-design{
     width: 90%;
     margin: auto;
+    display: none;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.Work-design.isActive{
+    width: 90%;
+    margin: auto;
+    padding: 0 0 10rem 0;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -1270,7 +1293,7 @@ body{
     .Work-li{
         font-size: 2.5rem;
     }
-    .Work-webs{
+    .Work-webs.isActive{
         flex-flow: column;
         align-items: center;
     }
@@ -1282,7 +1305,7 @@ body{
         left: 50%;
     }
     
-    .Work-design{
+    .Work-design.isActive{
         flex-flow: column;
         align-items: center;
     }
@@ -1430,6 +1453,7 @@ body{
 }
 .Me-img.isActive{
     display: block;
+    max-height: 70vh;
     object-fit: contain;
     border-radius: .5rem;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .4);
@@ -1456,6 +1480,12 @@ body{
     .Main-me::before{
         left: 80%;
     }
+
+    .Me-p{
+        font-size: 1.5rem;
+        line-height: 2em;
+    }
+
     .Me-slider{
         width: 100%;
         margin: auto;
@@ -1464,6 +1494,7 @@ body{
     }
 
 }
+
 @media(max-width:1000px){
 
     .Main-me::before{
@@ -1484,9 +1515,18 @@ body{
         text-align: center;
     }
 
+    .Me-p{
+        width: 80%;
+    }
+
     .Me-slider{
         width: 100%;
 
+    }
+
+    .Me-img.isActive{
+        max-width: 75vw;
+        max-height: 80vh;
     }
 
     .Me-btn{
@@ -1496,16 +1536,18 @@ body{
     }
 
     .Btn-prev{
-        left: 8%;
+        left: 5%;
     }
     .Btn-next{
-        right: 8%;
+        right: 5%;
     }
     
 }
 
 @media(max-width:720px){
-
+    .Me-p{
+        width: 80%;
+    }
     .Me-slider{
         width: 100%;
     }
@@ -1514,8 +1556,9 @@ body{
         height: 60vh;
 
     }
-    .Me-img{
-        width: 80%;
+    .Me-img.isActive{
+        width: auto;
+        max-height: 55vh;
     }
     .Btn-prev{
         left: 8%;
@@ -1539,6 +1582,14 @@ body{
 
     }
 
+    .Me-img.isActive{
+        width: auto;
+        max-height: 35vh;
+    }
+
+    .Me-p{
+        width: 80%;
+    }
     .Me-btn{
         width: 1.5rem;
         height: 1.5rem;

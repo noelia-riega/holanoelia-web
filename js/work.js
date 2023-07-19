@@ -14,6 +14,34 @@
         headerNav.classList.toggle(`isActive`)
     })
     
+//Cuando hago CLICK en workW hace una FUNTION
+    //WorkW le ADD la clase isActive
+    //WorkWebs aparece
+
+//Cuando hago CLICK en workD hace una FUNTION
+    //WorkD le remove la clase isActive a WorkW
+    //WorkD le ADD la clase isActive
+    //WorkDesign aparece
+
+const workW         = document.querySelector(`.Work-w`)
+const workD         = document.querySelector(`.Work-d`)
+const workWebs      = document.querySelector(`.Work-webs`)
+const workDesign    = document.querySelector(`.Work-design`)
+
+workW.addEventListener(`click` , ()=>{
+    workWebs.classList.add(`isActive`)
+    workDesign.classList.remove(`isActive`)
+})
+
+workD.addEventListener(`click` , ()=>{
+    workDesign.classList.add(`isActive`)
+    workWebs.classList.remove(`isActive`)
+
+})
+
+    
+
+
 //Lightbox para designArticle
 //Cuando hago CLICK en designArticle hace una FUNTION
     //DesignLighBox le ADD la clase isActive
@@ -41,3 +69,4 @@
     designBtn.addEventListener(`click` , ()=>{
         designLightBox.classList.remove(`isActive`)
     })
+

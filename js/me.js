@@ -44,6 +44,15 @@
     meImgList[sliderActive].classList.add(`isActive`)
  }
 
+ btnPrev.addEventListener(`click` , ()=>{
+    sliderActive--
+    if( sliderActive <= -1 ){
+        sliderActive = meImgList.length - 1
+    }
+
+    setActive()
+ })
+
  btnNext.addEventListener(`click` , ()=>{
 
     sliderActive++
@@ -53,13 +62,4 @@
 
     setActive()
 
- })
-
- btnPrev.addEventListener(`click` , ()=>{
-    sliderActive--
-    if( sliderActive <= -1 ){
-        sliderActive = meImgList.length - 1
-    }
-
-    setActive()
  })

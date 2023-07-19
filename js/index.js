@@ -14,6 +14,3 @@ headerBtn.addEventListener(`click` , ()=>{
     headerNav.classList.toggle(`isActive`)
 })
 
-
-
-
