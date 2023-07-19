@@ -1008,6 +1008,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    
 }
 
 .Work-li{
@@ -1019,6 +1020,7 @@ body{
     font-weight: 900;
     letter-spacing: 5px;
     text-align: start;
+    
 }
 
 .Work-li:nth-child(2n){
@@ -1030,6 +1032,7 @@ body{
     transform: scale(1.1);
     transition: all .5s ease;
 }
+
 .Work-li:nth-child(3n):hover{
     color: var(--acent-color);
     transform: scale(1.1);
@@ -1045,6 +1048,13 @@ body{
     color: var(--main-color);
     transform: scale(.8);
     transition: all .5s ease;
+}
+
+.Work-w{
+    cursor: pointer;
+}
+.Work-d{
+    cursor: pointer;
 }
 
 .Work-webs{
