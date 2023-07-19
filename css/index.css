@@ -1146,45 +1146,61 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.252);
     backdrop-filter: blur(5px);
-    display: none;
-    flex-flow: column nowrap;
+
+    display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 
     position: fixed;
     top: 0;
     left: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease;
+    z-index: 1;
 }
 
 .Design-lightbox.isActive{
-    display: flex;
-    z-index: 1;
-
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .Design-btn{
     width: 4rem;
     height: 4rem;
     color: var(--text-color);
+    cursor: pointer;
 
 }
 .Design-svg{
     width: 4rem;
     height: 4rem;
 }
+
 .Design-svg:hover{
     color: var(--acent-color);
+    transform: scale(1.5);
+    transition: all .3s ease;
 }
 
 .Design-svg:active{
     color: var(--main-color);
+    transform: scale(1);
 }
 
 .Lightbox-img{
-    width: 100%;
-    max-width: 960px;
-    max-height: 60vh;
-    object-fit: contain;
+    width: 80%;
+    max-width: 60rem;
+    height: 80vh;
+
+    object-fit: cover;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .4);
+    border: 1px solid var(--main-color);
+
      
 }
 
