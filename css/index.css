@@ -120,6 +120,11 @@ body{
     transition: all .5s ease;
 }
 
+.Header-logohover:active{
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+
 .Header-btn{
     width: 3rem;
     height: 3rem;
@@ -565,6 +570,18 @@ body{
     cursor: pointer; 
 }
 
+.Form-submit:hover{
+    background-color: var(--text-color);
+    transition: all .5s ease;
+}
+
+.Form-submit:active{
+    background-color: var(--main-color);
+    color: var(--acent-color);
+    transition: all .5s ease;
+
+}
+
 @media(min-width:1920px){
     .Main-decotext{
         font-size: 5rem;
@@ -713,6 +730,12 @@ body{
     color: var(--text-color);
     transition: all .5s ease;
 
+}
+
+.Footer-svg:active{
+    color: var(--acent-color);
+    transform: scale(1.1);
+    transition: all .5s ease;
 }
 
 @media(min-width:1920px){
@@ -1001,10 +1024,26 @@ body{
 
 .Work-li:first-child:hover{
     color: var(--acent-color);
+    transform: scale(1.1);
+    transition: all .5s ease;
 }
 .Work-li:nth-child(3n):hover{
     color: var(--acent-color);
+    transform: scale(1.1);
+    transition: all .5s ease;
 }
+
+.Work-li:first-child:active{
+    color: var(--main-color);
+    transform: scale(.8);
+    transition: all .5s ease;
+}
+.Work-li:nth-child(3n):active{
+    color: var(--main-color);
+    transform: scale(.8);
+    transition: all .5s ease;
+}
+
 .Work-webs{
     width: 90%;
     margin: auto;
@@ -1039,8 +1078,9 @@ body{
 .Webs-img{
     width: 100%;
     max-height: 50vh;
+    border-radius: .5rem;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .4);
-    border-radius: 10px;
+    border: 1px solid var(--main-color);
 
     object-fit: cover;
     
@@ -1102,8 +1142,9 @@ body{
 .Design-img{
     width: 100%;
     max-height: 50vh;
+    border-radius: .5rem;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .4);
-    border-radius: 10px;
+    border: 1px solid var(--main-color);
 
     object-fit: cover;
     
@@ -1350,6 +1391,18 @@ body{
     text-align: start;
 }
 
+.Me-p{
+    width: 100%;
+    
+    font-family: var(--font-sec);
+    color: var(--text-color);
+    font-size: .9375rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: start;
+    line-height: 2rem;
+}
+
 .Me-slider{
     width: 90%;
     margin: auto;
@@ -1378,10 +1431,9 @@ body{
 .Me-img.isActive{
     display: block;
     object-fit: contain;
-    border-radius: 8px;
-    background: #4e4646;
-    box-shadow:  8px -8px 16px #4d4545,
-                 -8px 8px 16px #4f4747;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .4);
+    border: 1px solid var(--main-color);
 }
 
 .Me-btn{
