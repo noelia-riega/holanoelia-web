@@ -1,0 +1,563 @@
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box; 
+}
+
+li{list-style: none;}
+
+h1, h2, h3, h4, h5, h6, strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a:active{ color:yellow}
+
+body{
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+    text-decoration-color: black;   
+    text-align: center;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.875rem;
+
+    font-family: 'Krona One', sans-serif;
+    font-size:  .9375rem;
+    color:black;
+    
+    text-transform: lowercase;
+}
+
+.Header-svg{
+    max-width: 3rem;
+    display: none;
+}
+
+.Header-left{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1.875rem;
+}
+.Header-h1{
+
+}
+.Header-a{}
+.Header-logo{}
+.Header-nav{}
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1.875rem;
+}
+.Header-li{
+    color: black;
+
+}
+.Header-link{}
+
+.Header-right{
+    border: 2px solid black;
+    padding: .9375rem 1.875rem;
+}
+
+.Header-right:hover{
+    background-color: black;
+    color: white;
+}
+
+.Digital{
+    width: 100%;
+    padding: 1.875rem;
+    margin: auto;
+
+    position: relative;
+}
+
+.Digital-destello{
+    width: 50%;
+
+    position: absolute;
+    top: 25%;
+    left: 25%
+    
+    /* no me deja poner el z-index */
+}
+
+.Digital-h2{
+    width: 80%;
+    padding: .625rem;
+}
+
+.Digital-dates{
+    font-family: 'Krona One', sans-serif;
+    text-align: start;
+
+    padding: 0 0 1.875rem;
+
+}
+
+.Digital-span{
+    margin: 0 0 1rem;
+}
+
+@media (max-width:700px){
+    .Header-svg{
+        display: block;
+    }
+    .Header-nav{
+        display: none;
+    }
+}
+
+@media  (max-width:600px){
+    .Header{
+        justify-content: flex-start;
+    }
+    .Header-left{
+        width: calc( 100% - 4rem );
+        justify-content: center;
+    }
+    .Header-right{
+        display: none;
+    }
+}
+
+.Section-uno{
+    width: 85%;
+    margin: auto;
+    padding: 0 0 6.25rem;
+}
+
+.Section-uno-h2{
+    padding: 0 0 2.5rem;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+
+.Section-article-uno{
+    margin: auto;
+    gap: 1.875rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Section-uno-wrapper{
+    display: flex;
+    flex-flow:column;
+    
+}
+
+.Section-uno-img{
+    
+}
+.Section-uno-h3{
+    padding: 1.875rem 0 0;
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5625rem;
+    text-transform: lowercase;
+    text-align: start;
+    
+}
+.Section-uno-h4{
+    padding: 1.875rem 0 0;
+
+    text-decoration: underline;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+
+@media (max-width:700px){
+    .Section-article-uno{
+    display:flex;
+    flex-flow: column;
+    }
+}
+
+.Nombres{
+    max-width: 100%;
+    margin: auto;
+    padding: 6.25rem;
+    background-image: url( /dia15/assets/fondo-nombres.png );
+    z-index: -1;
+}
+
+.Nombres-ul{
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Nombres-li{
+    font-family: 'Krona One', sans-serif;
+    font-size: 3rem;
+    text-transform: lowercase;
+    text-align: center;
+    
+}
+
+@media (max-width:700px){
+    .Nombres-ul{
+    display:flex;
+    flex-flow: column;
+    }
+}
+
+.Section-dos{
+    width: 85%;
+    margin: auto;
+
+    padding: 3.75rem 0 3.75rem;
+
+}
+
+.Section-dos-h2{
+    padding: 1.875rem 0 1.875rem;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 2.375rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+
+.Section-dos-article{
+    width: 100%;
+    margin: auto;
+}
+
+.Section-dos-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.25rem;
+    padding: 0 0 3.75rem;
+}
+
+.Section-dos-h4{
+    max-width:  15%;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 1.125rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+.Section-dos-h3{
+    max-width: 40%;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 1.625rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+
+.Section-dos-gt{
+    max-width: 30%;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: lowercase;
+    text-align: start;
+
+    padding: 1.25rem   1.875rem;
+    border: 2px solid black;
+}
+
+.Section-dos-gt:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:700px){
+    .Section-dos-wrapper{
+    display:flex;
+    flex-flow: column;
+    }
+}
+
+.Section-tres{
+    width: 95%;
+    margin: auto;
+    gap: 1.875rem;
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Section-tres-article{
+    display: block;
+}
+.Section-tres-h2{
+    padding: 0 0 1.25rem;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 2.375rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+.Section-tres-h3{
+    padding: 0 0 3.75rem;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: lowercase;
+    text-align: start;
+}
+.Section-tres-img{
+    padding: 0 0 3.75rem;
+}
+
+@media (max-width:700px){
+    .Section-tres{
+    display:flex;
+    flex-flow: column;
+    }
+}
+
+.Footer{
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Footer-uno{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.Footer-logo{
+    width: 20%;
+    padding: 0 0 1.25rem;
+}
+.Footer-img{}
+
+.Footer-licencia{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: .875rem;
+    color: white;
+}    
+    
+.Footer-dos{
+    max-width: 25%;
+    margin: auto;
+}
+
+.Footer-ul{
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.Footer-li{
+    gap: .625rem;
+    padding: .625rem;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: lowercase;
+    text-align: start;
+
+    color: white;
+}
+
+.Footer-tres{
+    max-width: 20%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.Footer-newsletter{
+    padding: 0 0 1.875rem;
+    gap: 1.25rem;
+
+    font-family: 'Krona One', sans-serif;    
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: lowercase;
+    text-align: start;
+    color: white;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.Footer-email{
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: normal;
+    font-size: .75rem;
+    text-transform: lowercase;
+    text-align: start;
+    color: white;
+}
+
+.Footer-rrss{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 1.25rem;
+}
+
+.Footer-svg{
+    color: white;
+}
+
+@media (max-width:700px){
+    .Footer{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+}
+
+.Fixed{
+    margin:auto;
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.Fixed-boton{
+   /* width: 100%;
+    background-color: blueviolet;*/
+    gap: .625rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.Fixed-related{
+    width: 8vw;
+    height: 5vh;
+    padding: .3125rem;
+    background-color: crimson;
+    gap: .625rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fixed-svg-related{
+
+    color: white;
+}
+
+.Fixed-related-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .625rem;
+    font-style: normal;
+
+    text-decoration-color: gray;
+    text-transform: uppercase;
+}
+
+.Fixed-buy{
+    width: 8vw;
+    height: 5vh;
+    padding: .3125rem;
+    background-color: white;
+    gap: .625rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fixed-svg-buy{
+
+    color: crimson;
+}
+
+.Fixed-buy-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    font-style: normal;
+
+    text-decoration-color: gray;
+    text-transform: uppercase;
+}
+
+@media (max-width:700px){
+    .Fixed-boton{
+    display:none
+    }
+}
