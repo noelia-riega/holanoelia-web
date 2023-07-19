@@ -93,13 +93,13 @@
                     <header class="Header-form">
                         <h2 class="Form-h2">Hablemos!</h2>
                     </header>
-                    <form action="archivo.php" 
-                          method="get"        
+                    <form action="enviar.php" 
+                          method="post"        
                           class="Form-contact">
-                        <input class="Form-noe" type="text" name="nombre" placeholder="Nombre">
+                        <input class="Form-noe" type="text" name="nombre" placeholder="Nombre" required>
                         <input class="Form-noe" type="email" name="email"
-                        placeholder="Email">
-                        <textarea class="Form-noe" name="mensaje" placeholder="Mensaje" cols="30" rows="6"></textarea>
+                        placeholder="Email" required>
+                        <textarea class="Form-noe" name="mensaje" placeholder="Mensaje" cols="30" rows="6" required></textarea>
                         <input class="Form-submit" type="submit">
                      </form>
                 </div>
