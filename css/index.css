@@ -1013,18 +1013,21 @@ body{
 
 .Work-li{
     width: auto;
+    margin-top: 2rem;
     font-family: var(--font-sec);
     font-size: 3rem;
     text-transform: uppercase;
     color: var(--sec-color);
     font-weight: 900;
     letter-spacing: 5px;
+    text-decoration: overline;
     text-align: start;
     
 }
 
 .Work-li:nth-child(2n){
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .Work-li:first-child:hover{
@@ -1048,6 +1051,7 @@ body{
     color: var(--main-color);
     transform: scale(.8);
     transition: all .5s ease;
+    
 }
 
 .Work-w{
@@ -1072,13 +1076,14 @@ body{
     margin: auto;
     padding: 0 0 10rem 0;
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: start;
     position: relative;
 
 }
 .Webs-article{
+    width: calc(100% / 3);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -1162,6 +1167,19 @@ body{
 
 }
 
+.Work-p{
+    width: 80%;
+    padding: 1rem;
+    background-color: var(--main-color);
+    border-radius: .3rem;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .1);
+    border: 1px solid var(--main-color);
+    font-family: var(--font-main);
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8em;
+}
 .Design-article{
     display: flex;
     flex-flow: row wrap;
