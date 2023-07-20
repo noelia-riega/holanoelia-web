@@ -907,6 +907,8 @@ body{
     width: 5rem;
 }
 
+/*Responsive About*/
+
 @media(min-width:1920px){
     .About-section{
         max-width: 50%;
