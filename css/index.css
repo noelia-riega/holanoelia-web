@@ -1,3 +1,5 @@
+/*reset*/
+
 *{
     margin: 0;
     padding: 0;
@@ -20,14 +22,6 @@ a{
 
 p a{
     display: inline;
-}
-
-a:hover{
-    
-}
-
-a:active{
-
 }
 
 
@@ -55,12 +49,12 @@ form , input , textarea , label , button , fieldset , legend  , select{
 
 :root{
     font-size: 100%;
-    --font-main:'Raleway', sans-serif;
-    --font-sec: 'Poppins', sans-serif;
-    --bg-color:  #dddbcb; 
-    --main-color:  #fffffa;
-    --text-color: #101314;   
-    --acent-color: #ff0080;
+    --font-main:'Raleway', sans-serif;/*Tipografia principal*/
+    --font-sec: 'Poppins', sans-serif;/*Tipografia secundaria*/
+    --bg-color:  #dddbcb; /*Color background principal*/
+    --main-color:  #fffffa; /*Color principal de textos grandes y otras cosas*/
+    --text-color: #101314;   /*Color principal de textos parrafos y otras cosas*/
+    --acent-color: #ff0080; /*Color principal tipo "acento" */
 }
 
 html{
@@ -70,6 +64,8 @@ html{
 body{
 
 }
+
+/*CSS Header*/
 
 .Header{
     width: 100%;
@@ -124,6 +120,8 @@ body{
     transform: scale(1.2);
     transition: all .5s ease;
 }
+
+/*Boton menu hamburguesa*/
 
 .Header-btn{
     width: 3rem;
@@ -198,6 +196,7 @@ body{
     color: var(--text-color);
 }
 
+/*Responsive de Header, trate de usar medidas mas estandar*/
 
 @media(min-width:1920px){
     .Header-ul{
@@ -255,6 +254,7 @@ body{
     }
 }
 
+/*CSS Main-index*/
 
 .Main{
     width: 100%;
@@ -267,7 +267,8 @@ body{
 
 }
 
-.Main::before {
+.Main::before { /*para crear la "punta hacia abajo" que tiene, haciendo que señale el Footer*/
+
   content: '';
   position: absolute;
   bottom: 0;
@@ -300,13 +301,15 @@ body{
 .Noe-h2{
     width: 100%;
     object-fit: contain;
-    transform:scale(0.9);
+    transform:scale(0.9); /*para que al hace hover se vea mas grande*/
+
     transition: all 2s ease;
 
 }
 
 .Noe-h2:hover{
-    transform:scale(1);
+    transform:scale(1); /*para que al hacer hover se vea mas grande*/
+
 }
 
 .Main-ul{
@@ -322,6 +325,8 @@ body{
 .Main-li{
     width: 100%;
 }
+
+/*animacion de cuadrados con simbolos*/
 
 .Main-img.Magentaone{
     width: 3rem;
@@ -399,6 +404,8 @@ body{
 
 }
 
+/*Animacion de los cuadrados con simbolos, para que aparezcan poco a poco utilizamos animation delay diferentes en cada cuadrado*/
+
 @keyframes cubeanimation{
     0%{
         opacity: 90%;
@@ -445,6 +452,8 @@ body{
    
 }
 
+/*Animacion del texto que aparece desde el costado derecho*/
+
 @keyframes movetext{
     0%{
         transform: translateX(300%);
@@ -477,7 +486,6 @@ body{
 
 
 }
-
 
 .Hola-h3{
     grid-column: span 1;
@@ -524,6 +532,8 @@ body{
     align-items: center;
     letter-spacing: 5px;
 }
+
+/*Formulario personalizado*/
 
 .Form-contact{
     width: 100%;
@@ -582,6 +592,8 @@ body{
 
 }
 
+/*Responsive de Main-index*/
+
 @media(min-width:1920px){
     .Main-decotext{
         font-size: 5rem;
@@ -626,6 +638,7 @@ body{
         left: 50%;
     }
 }
+
 @media(max-width:720px){
     .Main-decotext{
         font-size: 1rem;
@@ -690,6 +703,8 @@ body{
     }
 }
 
+/*CSS Footer*/
+
 .Footer{
     width: 100%;
     padding: 0 1rem 0 1rem;
@@ -737,6 +752,8 @@ body{
     transform: scale(1.1);
     transition: all .5s ease;
 }
+
+/*Responsive Footer*/
 
 @media(min-width:1920px){
     .Footer-ul{
@@ -792,6 +809,8 @@ body{
     }
 
 }
+
+/*CSS Main-about*/
 
 .About-main{
     width: 100%;

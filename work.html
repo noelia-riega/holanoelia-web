@@ -1,3 +1,11 @@
+<!--
+    Descripción: este archivo HTML contiene la página WORK de la web.
+    Consta de:
+    - Header
+    - Main
+    - Footer
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,6 +20,9 @@
 </head>
 
 <body>
+
+<!--Header-->
+
     <header class="Header">
         <div class="Header-wrap">
             <h1 class="Header-h1">
@@ -20,11 +31,15 @@
                     <img class="Header-logohover" src="assets/holanoelia-logohover.webp" alt="Logo puntos">
                 </a>
             </h1>
+
+            <!--Boton para menú hamburguesa de responsive-->
+
             <button class="Header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Header-btn" viewBox="0 0 16 16">
                     <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
                   </svg>
             </button>
+
             <nav class="Header-nav">
                 <ul class="Header-ul">
                     <li class="Header-li">
@@ -44,7 +59,9 @@
         </div>     
     
 </header>
-    
+
+<!--Main-->
+
     <Main class="Main-work"> 
         <div class="Work-wrap">
             <h2 class="Work-h2">Work</h2>
@@ -61,7 +78,9 @@
             </ul>
         </div>
 
-        <div class="Work-webs isActive">
+        <!--Articulos para trabajos de web y diseño-->
+
+        <div class="Work-webs isActive"> <!--isActive pensando en JS-->
             <article class="Webs-article">
                 <a class="Webs-a " href="pixar/pixar.html" target="_blank">
                     <img src="assets/imgpixar.webp" alt="Imagen pixar" class="Webs-img">
@@ -111,8 +130,10 @@
                     <h3 class="Design-h3">A pulso tipografía</h3>
             </article>
         </div>
-                        
-        <div class="Design-lightbox">
+          
+        <!--Lightbox para JS-->
+
+        <div class="Design-lightbox"> 
             <button class="Design-btn">
                 <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Design-svg" viewBox="0 0 16 16">
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
@@ -122,6 +143,8 @@
         </div>
 
     </Main>
+
+<!--Footer-->
 
     <footer class="Footer">
         <div class="Footer-wrap">

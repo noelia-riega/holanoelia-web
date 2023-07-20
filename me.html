@@ -1,3 +1,11 @@
+<!--
+    Descripción: este archivo HTML contiene la página ME de la web.
+    Consta de:
+    - Header
+    - Main
+    - Footer
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,6 +19,9 @@
     <script src="js/me.js" defer></script>
 </head>
 <body>
+
+<!--Header-->
+
     <header class="Header">
         <div class="Header-wrap">
             <h1 class="Header-h1">
@@ -19,11 +30,15 @@
                     <img class="Header-logohover" src="assets/holanoelia-logohover.webp" alt="Logo puntos">
                 </a>
             </h1>
+
+            <!--Boton para menú hamburguesa de responsive-->
+
             <button class="Header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Header-btn" viewBox="0 0 16 16">
                     <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
                   </svg>
             </button>
+
             <nav class="Header-nav">
                 <ul class="Header-ul">
                     <li class="Header-li">
@@ -44,6 +59,8 @@
     
 </header>
 
+<!--Main-->
+
     <main class="Main-me">
         <section class="Section-me">
             <h2 class="Me-h2">Me</h2>
@@ -51,9 +68,11 @@
             <p class="Me-p">Una de mis grandes pasiones es la fotografía análoga, la practico desde que iba en el colegio y ha sido una herramienta muy importante a la hora de buscar desconectar del mundo virtual. Creo que es valioso poder tener alguna herramienta que nos ayude a estar más presentes en el mundo real, ya que pasamos tanto tiempo frente al computador, para mí salir a tomar fotografías que no sé cómo van a salir hasta que las revelo es esa herramienta, después puedo volver al computador con la mente mucho más despejada.</p>                 
         </section>
 
+        <!--Slider de fotos que tendra JS-->
+
         <div class="Me-slider" >
             <div class="Me-wrap ">
-                <img src="assets/holanoelia-imgbosque.webp" alt="Foto análoga bosque" class="Me-img isActive">
+                <img src="assets/holanoelia-imgbosque.webp" alt="Foto análoga bosque" class="Me-img isActive"> <!--isActive pensando en JS-->
 
                 <img src="assets/holanoelia-imghorizonte.webp" alt="Foto análoga horizonte" class="Me-img">
 
@@ -78,6 +97,8 @@
                 <img src="assets/holanoelia-imgsol.webp" alt="Foto análoga sol" class="Me-img">
             </div>
 
+            <!--Botones para JS-->
+
             <button class="Me-btn Btn-prev">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="Me-svg" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z"/>
@@ -90,6 +111,8 @@
             </button>
         </div>    
     </main>
+
+<!--Footer-->
 
     <footer class="Footer">
         <div class="Footer-wrap">
