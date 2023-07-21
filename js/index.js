@@ -13,4 +13,3 @@ console.log( headerNav)
 headerBtn.addEventListener(`click` , ()=>{
     headerNav.classList.toggle(`isActive`)
 })
-
