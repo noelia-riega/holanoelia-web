@@ -161,7 +161,7 @@ body{
     color: var(--text-color);
     font-weight: 900;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     letter-spacing: 5px;
     position: relative;
 }
@@ -269,16 +269,16 @@ body{
 
 .Main::before { /*para crear la "punta hacia abajo" que tiene, haciendo que señale el Footer*/
 
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 36px 36px 0 36px;
-  border-color: var(--bg-color) transparent transparent transparent;
-  left: 82%;
-  transform: translateX(-50%) translateY(100%);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 36px 36px 0 36px;
+    border-color: var(--bg-color) transparent transparent transparent;
+    left: 82%;
+    transform: translateX(-50%) translateY(100%);
 }
 
 .Main-section{
@@ -571,7 +571,7 @@ body{
 .Form-h2{
     width: 100%;
     font-family: var(--font-main);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--main-color);
@@ -942,7 +942,7 @@ body{
     
     font-family: var(--font-sec);
     color: var(--text-color);
-    font-size: .9375rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     word-spacing: 2px;
     text-align: end;
@@ -1522,7 +1522,7 @@ body{
     
     font-family: var(--font-sec);
     color: var(--text-color);
-    font-size: .9375rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     word-spacing: 2px;
     text-align: start;
