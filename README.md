@@ -3,7 +3,7 @@
 
 # Descripción del proyecto 🐱
 Proyecto final del módulo 19-22 Diseño Web HTML5, siendo la página WEB a presentar el resultado de todo el aprendizaje a través de estos meses.
-En este caso, la propuesta será una página WEB que sirva como portafolio personal tanto para WEBS y Diseño Gráfico.
+En este caso, la propuesta será una página WEB que sirva como portafolio personal tanto para WEBS y Diseño Gráfico. http://www.holanoelia.com
 
 # Estado del proyecto
 Finalizado. ✅ 😸
