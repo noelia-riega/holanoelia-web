@@ -1021,6 +1021,7 @@ body{
     }
 }
 
+/*CSS Main-work*/
 
 .Main-work{
     width: 100%;
@@ -1301,6 +1302,8 @@ body{
     text-shadow: 1px 1px 2px var(--text-color);
 }
 
+/*Lightbox para JS*/
+
 .Design-lightbox{
     width: 100%;
     height: 100%;
@@ -1363,6 +1366,8 @@ body{
 
      
 }
+
+/*Responsive Main-work*/
 
 @media(min-width:1920px){
     .Main-work::before{
@@ -1450,6 +1455,8 @@ body{
     }
 }
 
+/*CSS Main-me*/
+
 .Main-me{
     width: 100%;
     margin-bottom: 5vh;
@@ -1522,6 +1529,8 @@ body{
     line-height: 2.5em;
 }
 
+/*Slider para JS*/
+
 .Me-slider{
     width: 90%;
     margin: auto;
@@ -1570,6 +1579,8 @@ body{
 .Btn-next{
     right: 5%;
 }
+
+/*Responsive Main-work*/
 
 @media(min-width:1920px){
 
@@ -1699,6 +1710,8 @@ body{
         right: 11%;
     }
 }
+
+/*CSS Arigatitos*/
 
 .Arigatitos{
     width: 100%;
