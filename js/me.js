@@ -23,7 +23,7 @@
 //A meImgList le ADD la clase isActive
 
 //Cuando hago CLICK en btnNext hace una FUNTION
-//MESliderActive--
+//MeSliderActive--
  //Si MeSliderActive es IGUAL o MENOR a -1
  //Entonces MesliderActive es igual a 11
 
