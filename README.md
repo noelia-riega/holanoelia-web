@@ -12,6 +12,11 @@ Finalizado. ✅ 😸
 
 HTML5 CSS y JS
 
+# Metodologías y escritura
+
+Suit CSS para HTML
+camelCase para JS
+
 # Autor y desarrollador
 Noelia Riega
 
