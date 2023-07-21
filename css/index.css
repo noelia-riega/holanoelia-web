@@ -980,8 +980,9 @@ body{
         position: static;
         margin: auto;
         width: 100%;
-        min-height: 110vh;
+        height: 140vh;
         padding-top: 0;
+        gap: 2rem;
     }
 
     .About-artwrap{
@@ -1013,6 +1014,10 @@ body{
 }
 
 @media(max-width:720px){
+    .About-section{
+        height: 110vh;
+
+    }
     .About-artwrap{
         width: 100%;
     }
@@ -1020,6 +1025,13 @@ body{
         width: 95%;
     }
 }
+
+@media(max-width:480px){
+    .About-section{
+        height: 90vh;
+    }
+}
+    
 
 /*CSS Main-work*/
 
