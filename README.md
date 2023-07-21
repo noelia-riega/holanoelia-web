@@ -14,8 +14,7 @@ HTML5 CSS y JS
 
 # Metodologías y escritura
 
-Suit CSS para HTML
-camelCase para JS
+Suit CSS para HTML / escritura camelCase para JS
 
 # Autor y desarrollador
 Noelia Riega
