@@ -1215,6 +1215,16 @@ body{
     
 }
 
+.Work-p{
+    width: 80%;
+    padding: 1rem;
+    font-family: var(--font-main);
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
 .Work-design{
     width: 90%;
     margin: auto;
@@ -1236,19 +1246,7 @@ body{
 
 }
 
-.Work-p{
-    width: 80%;
-    padding: 1rem;
-    background-color: var(--main-color);
-    border-radius: .3rem;
-    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .1);
-    border: 1px solid var(--main-color);
-    font-family: var(--font-main);
-    text-align: justify;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.8em;
-}
+
 .Design-article{
     display: flex;
     flex-flow: row wrap;
@@ -1395,12 +1393,13 @@ body{
         font-size: 2.5rem;
     }
     .Work-webs.isActive{
-        flex-flow: column;
-        align-items: center;
+        flex-flow: row nowrap;
+        align-items: start;
     }
     .Webs-h3{
-        top: 45%;
+        top: 35%;
         left: 30%;
+        font-size: 2rem;
     }
     .Main-work::before{
         left: 50%;
@@ -1426,8 +1425,19 @@ body{
     .Work-ul{
         justify-content: center;
     }
+
+    .Webs-article{
+        width: 100%;
+    }
+    .Work-webs.isActive{
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
     .Webs-h3{
-        font-size: 2rem;
+        top: 40%;
+        left: 30%;
+        font-size: 3rem;
     }
 }
 
@@ -1518,15 +1528,17 @@ body{
 }
 
 .Me-p{
-    width: 100%;
+    width: 90%;
     
-    font-family: var(--font-sec);
+    font-family: var(--font-main);
     color: var(--text-color);
     font-size: 1rem;
+    font-weight: 400;
     letter-spacing: 2px;
     word-spacing: 2px;
-    text-align: start;
+    text-align: justify;
     line-height: 2.5em;
+
 }
 
 /*Slider para JS*/
