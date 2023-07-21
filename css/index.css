@@ -875,6 +875,7 @@ body{
     top: 0%;
     left: 0%;
     padding-top: 4rem;
+    gap: 1rem;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -887,7 +888,7 @@ body{
     margin-top: 10vh;
     padding: .5rem;
     font-family: var(--font-main);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     color: var(--acent-color);
     font-weight: 900;
@@ -897,8 +898,7 @@ body{
 }
 
 .About-img{
-    width: 60%;
-    margin-top: 20vh;
+    width: 48%;
     object-fit: contain;
     border-radius: .5rem;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .4);
