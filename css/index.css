@@ -47,12 +47,7 @@ form , input , textarea , label , button , fieldset , legend  , select{
 
 :root{
     font-size: 100%;
-    --font-main:'Raleway', sans-serif;/*Tipografia principal*/
-    --font-sec: 'Poppins', sans-serif;/*Tipografia secundaria*/
-    --bg-color:  #dddbcb; /*Color background principal*/
-    --main-color:  #fffffa; /*Color principal de textos grandes y otras cosas*/
-    --text-color: #101314;   /*Color principal de textos parrafos y otras cosas*/
-    --acent-color: #ff0080; /*Color principal tipo "acento" */
+    
 }
 
 html{
@@ -61,6 +56,13 @@ html{
 
 body{
 
+    --font-main:'Raleway', sans-serif;/*Tipografia principal*/
+    --font-sec: 'Poppins', sans-serif;/*Tipografia secundaria*/
+    --bg-color:  #dddbcb; /*Color background principal*/
+    --main-color:  #fffffa; /*Color principal de textos grandes y otras cosas*/
+    --text-color: #101314;   /*Color principal de textos parrafos y otras cosas*/
+    --acent-color: #ff0080; /*Color principal tipo "acento" */
+    
 }
 
 /*CSS Header*/
