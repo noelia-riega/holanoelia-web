@@ -8,9 +8,9 @@ En este caso, la propuesta será una página WEB que sirva como portafolio perso
 # Estado del proyecto
 Finalizado. ✅ 😸
 
-# Tecnologías utilizadas
+# Tecnologías y programas utilizados
 
-HTML5 CSS y JS
+HTML5 CSS y JS / VisualStudioCode
 
 # Metodologías y escritura
 
